@@ -1910,185 +1910,6 @@ head.appendChild(script);
 
     <b:include name='quickedit'/>
   </b:includable>
-          <b:includable id='Includable3'>
-    <b:if cond='data:feedbackSurveyLink'>
-      <div class='mobile-survey-link' style='text-align: center;'>
-        <data:feedbackSurveyLink/>
-      </div>
-    </b:if>
-
-    <div class='widget-content' style='text-align: center;'>
-      <b:if cond='data:attribution != &quot;&quot;'>
-       <data:attribution/>
-      </b:if>
-    </div>
-
-    <b:include name='quickedit'/>
-  </b:includable>
-          <b:includable id='Reviews'>
-  <b:if cond='data:blog.url == data:blog.homepageUrl'>
-    <data:title/>
-  <b:else/>
-    <a expr:href='data:blog.homepageUrl'><data:title/></a>
-  </b:if>
-</b:includable>
-          <b:includable id='bahasa'>
-                          <div class='descriptionwrapper'>
-                            <p class='description'>
-                              <span>
-                                <data:description/>
-                              </span>
-                            </p>
-                          </div>
-                        </b:includable>
-          <b:includable id='beranda' var='data'>
-  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-    <option value=''><data:title/></option>
-    <b:loop values='data:data' var='i'>
-      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
-    </b:loop>
-  </select>
-</b:includable>
-          <b:includable id='description'>
-                    <div class='descriptionwrapper'>
-                      <p class='description'>
-                        <span>
-                          <data:description/>
-                        </span>
-                      </p>
-                    </div>
-                  </b:includable>
-          <b:includable id='erewr'>
-                          <b:if cond='data:feedbackSurveyLink'>
-                            <div class='mobile-survey-link' style='text-align: center;'>
-                              <data:feedbackSurveyLink/>
-                            </div>
-                          </b:if>
-                          <div class='widget-content' style='text-align: center;'>
-                            <b:if cond='data:attribution != &quot;&quot;'>
-                              <data:attribution/>
-                            </b:if>
-                          </div>
-                          <b:include name='quickedit'/>
-                        </b:includable>
-          <b:includable id='home' var='data'>
-  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-    <option value=''><data:title/></option>
-    <b:loop values='data:data' var='i'>
-      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
-    </b:loop>
-  </select>
-</b:includable>
-          <b:includable id='interval' var='intervalData'>
-  <b:loop values='data:intervalData' var='i'>
-      <ul class='hierarchy'>
-        <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
-          <b:include data='i' name='toggle'/>
-          <a class='post-count-link' expr:href='data:i.url'><data:i.name/></a>
-            <span class='post-count' dir='ltr'>(<data:i.post-count/>)</span>
-          <b:include cond='data:i.data' data='i.data' name='interval'/>
-          <b:include cond='data:i.posts' data='i.posts' name='posts'/>
-        </li>
-      </ul>
-  </b:loop>
-</b:includable>
-          <b:includable id='jusrankhaisar' var='data'>
-  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-    <option value=''><data:title/></option>
-    <b:loop values='data:data' var='i'>
-      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
-    </b:loop>
-  </select>
-</b:includable>
-          <b:includable id='menu' var='data'>
-  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-    <option value=''><data:title/></option>
-    <b:loop values='data:data' var='i'>
-      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
-    </b:loop>
-  </select>
-</b:includable>
-          <b:includable id='multi'>
-              <b:if cond='data:feedbackSurveyLink'>
-                <div class='mobile-survey-link' style='text-align: center;'>
-                  <data:feedbackSurveyLink/>
-                </div>
-              </b:if>
-              <div class='widget-content' style='text-align: center;'>
-                <b:if cond='data:attribution != &quot;&quot;'>
-                  <data:attribution/>
-                </b:if>
-              </div>
-              <b:include name='quickedit'/>
-            </b:includable>
-          <b:includable id='posts' var='posts'>
-  <ul class='posts'>
-    <b:loop values='data:posts' var='i'>
-      <li><a expr:href='data:i.url'><data:i.title/></a></li>
-    </b:loop>
-  </ul>
-</b:includable>
-          <b:includable id='shareButtons' var='post'>
-                          <b:if cond='data:top.showEmailButton'>
-                            <a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'>
-                              <span class='share-button-link-text'>
-                                <data:top.emailThisMsg/>
-                              </span>
-                            </a>
-                          </b:if>
-                          <b:if cond='data:top.showBlogThisButton'>
-                            <a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'>
-                              <span class='share-button-link-text'>
-                                <data:top.blogThisMsg/>
-                              </span>
-                            </a>
-                          </b:if>
-                          <b:if cond='data:top.showTwitterButton'>
-                            <a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'>
-                              <span class='share-button-link-text'>
-                                <data:top.shareToTwitterMsg/>
-                              </span>
-                            </a>
-                          </b:if>
-                          <b:if cond='data:top.showFacebookButton'>
-                            <a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'>
-                              <span class='share-button-link-text'>
-                                <data:top.shareToFacebookMsg/>
-                              </span>
-                            </a>
-                          </b:if>
-                          <b:if cond='data:top.showPinterestButton'>
-                            <a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'>
-                              <span class='share-button-link-text'>
-                                <data:top.shareToPinterestMsg/>
-                              </span>
-                            </a>
-                          </b:if>
-                          <b:if cond='data:top.showDummy'>
-                            <div class='goog-inline-block dummy-container'>
-                              <data:post.dummyTag/>
-                            </div>
-                          </b:if>
-                        </b:includable>
-          <b:includable id='toggle' var='interval'>
-  <b:if cond='data:interval.toggleId'>
-  <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
-    <a class='toggle' href='javascript:void(0)'>
-      <span class='zippy toggle-open'>&#9660;&#160;</span>
-    </a>
-  <b:else/>
-    <a class='toggle' href='javascript:void(0)'>
-      <span class='zippy'>
-        <b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
-          &#9668;&#160;
-        <b:else/>
-          &#9658;&#160;
-        </b:if>
-      </span>
-    </a>
-  </b:if>
- </b:if>
-</b:includable>
         </b:widget>
       </b:section>
     </div>
@@ -2390,6 +2211,19 @@ $target.after(html);
   </b:widget>
 </b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'>
   <b:widget id='HTML2' locked='false' title='##EasyReadMore##' type='HTML'>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='HTML4' locked='false' mobile='yes' title='MobileAD' type='HTML'>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
