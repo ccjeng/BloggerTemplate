@@ -710,7 +710,11 @@ body.mobile .AdSense {
     font-family: Arial, &quot;文泉驛正黑&quot;, &quot;WenQuanYi Zen Hei&quot;, &quot;儷黑 Pro&quot;, &quot;LiHei Pro&quot;, &quot;微軟正黑體&quot;, &quot;Microsoft JhengHei&quot;, sans-serif;
   }
   </style>
-  
+ 
+
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'/>
+  <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+
 </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -1906,14 +1910,6 @@ head.appendChild(script);
 
     <b:include name='quickedit'/>
   </b:includable>
-          <b:includable id='Home' var='data'>
-  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-    <option value=''><data:title/></option>
-    <b:loop values='data:data' var='i'>
-      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
-    </b:loop>
-  </select>
-</b:includable>
           <b:includable id='Includable3'>
     <b:if cond='data:feedbackSurveyLink'>
       <div class='mobile-survey-link' style='text-align: center;'>
@@ -1954,10 +1950,14 @@ head.appendChild(script);
   </select>
 </b:includable>
           <b:includable id='description'>
-  <div class='descriptionwrapper'>
-    <p class='description'><span><data:description/></span></p>
-  </div>
-</b:includable>
+                    <div class='descriptionwrapper'>
+                      <p class='description'>
+                        <span>
+                          <data:description/>
+                        </span>
+                      </p>
+                    </div>
+                  </b:includable>
           <b:includable id='erewr'>
                           <b:if cond='data:feedbackSurveyLink'>
                             <div class='mobile-survey-link' style='text-align: center;'>
@@ -1971,34 +1971,27 @@ head.appendChild(script);
                           </div>
                           <b:include name='quickedit'/>
                         </b:includable>
-          <b:includable id='flat' var='data'>
-  <ul class='flat'>
+          <b:includable id='home' var='data'>
+  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+    <option value=''><data:title/></option>
     <b:loop values='data:data' var='i'>
-      <li class='archivedate'>
-        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
-      </li>
+      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
     </b:loop>
-  </ul>
+  </select>
 </b:includable>
           <b:includable id='interval' var='intervalData'>
-                          <b:loop values='data:intervalData' var='i'>
-                            <ul class='hierarchy'>
-                              <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
-                                <b:include data='i' name='toggle'/>
-                                <a class='post-count-link' expr:href='data:i.url'>
-                                  <data:i.name/>
-                                </a>
-                                <span class='post-count' dir='ltr'>
-                                  (
-                                  <data:i.post-count/>
-                                  )
-                                </span>
-                                <b:include cond='data:i.data' data='i.data' name='interval'/>
-                                <b:include cond='data:i.posts' data='i.posts' name='posts'/>
-                              </li>
-                            </ul>
-                          </b:loop>
-                        </b:includable>
+  <b:loop values='data:intervalData' var='i'>
+      <ul class='hierarchy'>
+        <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
+          <b:include data='i' name='toggle'/>
+          <a class='post-count-link' expr:href='data:i.url'><data:i.name/></a>
+            <span class='post-count' dir='ltr'>(<data:i.post-count/>)</span>
+          <b:include cond='data:i.data' data='i.data' name='interval'/>
+          <b:include cond='data:i.posts' data='i.posts' name='posts'/>
+        </li>
+      </ul>
+  </b:loop>
+</b:includable>
           <b:includable id='jusrankhaisar' var='data'>
   <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
     <option value=''><data:title/></option>
@@ -2008,20 +2001,13 @@ head.appendChild(script);
   </select>
 </b:includable>
           <b:includable id='menu' var='data'>
-                          <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-                            <option value=''>
-                              <data:title/>
-                            </option>
-                            <b:loop values='data:data' var='i'>
-                              <option expr:value='data:i.url'>
-                                <data:i.name/>
-                                (
-                                <data:i.post-count/>
-                                )
-                              </option>
-                            </b:loop>
-                          </select>
-                        </b:includable>
+  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+    <option value=''><data:title/></option>
+    <b:loop values='data:data' var='i'>
+      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+    </b:loop>
+  </select>
+</b:includable>
           <b:includable id='multi'>
               <b:if cond='data:feedbackSurveyLink'>
                 <div class='mobile-survey-link' style='text-align: center;'>
@@ -2042,13 +2028,46 @@ head.appendChild(script);
     </b:loop>
   </ul>
 </b:includable>
-          <b:includable id='title'>
-                          <b:if cond='data:blog.url == data:blog.homepageUrl'>
-                            <data:title/>
-                            <b:else/>
-                            <a expr:href='data:blog.homepageUrl'>
-                              <data:title/>
+          <b:includable id='shareButtons' var='post'>
+                          <b:if cond='data:top.showEmailButton'>
+                            <a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'>
+                              <span class='share-button-link-text'>
+                                <data:top.emailThisMsg/>
+                              </span>
                             </a>
+                          </b:if>
+                          <b:if cond='data:top.showBlogThisButton'>
+                            <a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'>
+                              <span class='share-button-link-text'>
+                                <data:top.blogThisMsg/>
+                              </span>
+                            </a>
+                          </b:if>
+                          <b:if cond='data:top.showTwitterButton'>
+                            <a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'>
+                              <span class='share-button-link-text'>
+                                <data:top.shareToTwitterMsg/>
+                              </span>
+                            </a>
+                          </b:if>
+                          <b:if cond='data:top.showFacebookButton'>
+                            <a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'>
+                              <span class='share-button-link-text'>
+                                <data:top.shareToFacebookMsg/>
+                              </span>
+                            </a>
+                          </b:if>
+                          <b:if cond='data:top.showPinterestButton'>
+                            <a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'>
+                              <span class='share-button-link-text'>
+                                <data:top.shareToPinterestMsg/>
+                              </span>
+                            </a>
+                          </b:if>
+                          <b:if cond='data:top.showDummy'>
+                            <div class='goog-inline-block dummy-container'>
+                              <data:post.dummyTag/>
+                            </div>
                           </b:if>
                         </b:includable>
           <b:includable id='toggle' var='interval'>
@@ -2122,6 +2141,63 @@ document.documentElement.firstChild.appendChild(script);
 //]]>
 </script>
 <!-- 相關文章2 end, designed by WFU BLOG-->
+
+<!-- Adsense 安裝懶人包 start -->
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<script>
+//<![CDATA[
+/* 文章標題之前 */
+(function($) {
+var width = 728,
+height = 90,
+ad_client = "ca-pub-6914084100751028",
+ad_slot = "3983247217",
+$target = $(".post-title"),
+style = "margin: 20px auto; text-align: center;",
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+$target.before(html);
+})(jQuery);
+ 
+/* 文章標題之後 
+(function($) {
+var width = 728,
+height = 90,
+ad_client = "ca-pub-6914084100751028",
+ad_slot = "3983247217",
+$target = $(".post-title"),
+style = "margin: 20px auto; text-align: center;",
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+$target.after(html);
+})(jQuery);
+ */
+
+/* 繼續閱讀 */
+(function($) {
+var width = 728,
+height = 90,
+ad_client = "ca-pub-6914084100751028",
+ad_slot = "3983247217",
+$target = $("a[name='more']"),
+style = "margin: 20px auto; text-align: center;",
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+$target.before(html);
+})(jQuery);
+ 
+/* 文末位置 */
+(function($) {
+var width = 728,
+height = 90,
+ad_client = "ca-pub-6914084100751028",
+ad_slot = "3983247217",
+$target = $(".post-body"),
+style = "margin: 20px auto; text-align: center;",
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+$target.after(html);
+})(jQuery);
+//]]>
+</script>
+</b:if>
+<!-- Adsense 安裝懶人包 end, Designed by WFU BLOG -->
 
 </body>
 
@@ -2269,16 +2345,18 @@ document.documentElement.firstChild.appendChild(script);
   </ul>
 </b:includable>
     <b:includable id='interval' var='intervalData'>
-  <b:loop values='data:intervalData' var='i'>
-      <ul class='hierarchy'>
-        <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
-          <b:include data='i' name='toggle'/>
-          <a class='post-count-link' expr:href='data:i.url'><data:i.name/></a>
-            <span class='post-count' dir='ltr'>(<data:i.post-count/>)</span>
-          <b:include cond='data:i.data' data='i.data' name='interval'/>
-          <b:include cond='data:i.posts' data='i.posts' name='posts'/>
-        </li>
-      </ul>
+  <b:loop values='data:intervalData' var='interval'>
+    <ul class='hierarchy'>
+      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
+        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
+        <a class='post-count-link' expr:href='data:interval.url'>
+          <data:interval.name/>
+        </a>
+        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
+        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
+        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+      </li>
+    </ul>
   </b:loop>
 </b:includable>
     <b:includable id='menu' var='data'>
@@ -2291,29 +2369,23 @@ document.documentElement.firstChild.appendChild(script);
 </b:includable>
     <b:includable id='posts' var='posts'>
   <ul class='posts'>
-    <b:loop values='data:posts' var='i'>
-      <li><a expr:href='data:i.url'><data:i.title/></a></li>
+    <b:loop values='data:posts' var='post'>
+      <li><a expr:href='data:post.url'><data:post.title/></a></li>
     </b:loop>
   </ul>
 </b:includable>
     <b:includable id='toggle' var='interval'>
-  <b:if cond='data:interval.toggleId'>
-  <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
-    <a class='toggle' href='javascript:void(0)'>
-      <span class='zippy toggle-open'>&#9660;&#160;</span>
-    </a>
-  <b:else/>
-    <a class='toggle' href='javascript:void(0)'>
-      <span class='zippy'>
-        <b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
-          &#9668;&#160;
-        <b:else/>
-          &#9658;&#160;
-        </b:if>
-      </span>
-    </a>
-  </b:if>
- </b:if>
+  <a class='toggle' href='javascript:void(0)'>
+    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
+      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+        &#9660;&#160;
+      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
+        &#9668;&#160;
+      <b:else/>
+        &#9658;&#160;
+      </b:if>
+    </span>
+  </a>
 </b:includable>
   </b:widget>
 </b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'>
