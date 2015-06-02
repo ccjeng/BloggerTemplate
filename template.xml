@@ -714,7 +714,7 @@ body.mobile .AdSense {
 
   <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'/>
   <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-
+  <script src='http://ccjeng.github.io/Youtube_To_MP3/script/lazyload-min.js'></script>
 </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -1511,6 +1511,17 @@ head.appendChild(script);
       </div>
     </b:if>
 
+    <!-- lazyload -->
+    <script type='text/javascript'>
+    //<![CDATA[
+      $("#main .blog-posts .post-body img").lazyload({
+        effect : "fadeIn",
+        placeholder: "http://1.bp.blogspot.com/-Qt2R-bwAb4M/T8WKoNKBHRI/AAAAAAAACnA/BomA-Whl_Bk/s1600/grey.gif"
+      });
+    //]]>
+    </script>
+    <!--  -->
+
     <div class='post-footer'>
     <div class='post-footer-line post-footer-line-1'><span class='post-icons'>
         <!-- email post links -->
@@ -2020,6 +2031,7 @@ $target.after(html);
 </b:if>
 <!-- Adsense 安裝懶人包 end, Designed by WFU BLOG -->
 
+
 </body>
 
 <macro:includable id='sections' var='col'>
@@ -2062,6 +2074,16 @@ $target.after(html);
 </macro:includable>
 
 <b:section-contents id='sidebar-right-1'>
+  <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+    <b:includable id='main'>
+  <div class='widget-content'>
+    <b:if cond='!data:blog.disableAdSenseWidget'>
+      <data:adCode/>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+  </b:widget>
   <b:widget id='HTML1' locked='false' title='關於我' type='HTML'>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2211,19 +2233,6 @@ $target.after(html);
   </b:widget>
 </b:section-contents><b:section-contents id='sidebar-right-2-1'/><b:section-contents id='sidebar-right-2-2'/><b:section-contents id='sidebar-right-3'>
   <b:widget id='HTML2' locked='false' title='##EasyReadMore##' type='HTML'>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-  <b:widget id='HTML4' locked='false' mobile='yes' title='MobileAD' type='HTML'>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
