@@ -5,11 +5,18 @@
     <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
 
+<meta content='一個分享技術心得、好用工具、閱讀筆記、旅行經歷的部落格。 技術以網頁開發與Android手機應用程式設計為主。' name='description'/>
+<meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development' name='keywords'/>
+
 <meta content='1q-5awxOKos7HaSa3tuRxOfJrbgqV7wmFaj-NnaIVsI' name='google-site-verification'/>
 
 <meta content='37A1C964DB8F38CA2505D785E33EA429' name='msvalidate.01'/>
 
-    <title><data:blog.pageTitle/></title>
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<title><data:blog.pageName/> | <data:blog.title/></title>
+<b:else/>
+<title><data:blog.pageTitle/></title>
+</b:if>
 
     <b:skin><![CDATA[/*
 -----------------------------------------------
@@ -66,7 +73,7 @@ URL:      www.noaesthetic.com
      <Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee" value="#eeeeee"/>
    </Group>
 
-   <Group description="Post Title" selector="h3.post-title, .comments h4">
+   <Group description="Post Title" selector="h2.post-title, .comments h4">
      <Variable name="post.title.font" description="Font" type="font"
          default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 22px 'Trebuchet MS',Trebuchet,Verdana,sans-serif"/>
    </Group>
@@ -386,7 +393,7 @@ h2.date-header {
   margin: 0 0 $(post.margin.bottom) 0;
 }
 
-h3.post-title, .comments h4 {
+h2.post-title, .comments h4 {
   font: $(post.title.font);
   margin: .75em 0 0;
 }
@@ -548,7 +555,7 @@ body.mobile .AdSense {
   margin: 0 -10px;
 }
 
-.mobile h3.post-title {
+.mobile h2.post-title {
   margin: 0;
 }
 
@@ -714,7 +721,7 @@ body.mobile .AdSense {
 
   <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'/>
   <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-  <script src='http://ccjeng.github.io/Youtube_To_MP3/script/lazyload-min.js'></script>
+  <script src='http://ccjeng.github.io/Youtube_To_MP3/script/lazyload-min.js'/>
 </head>
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
@@ -1288,9 +1295,9 @@ head.appendChild(script);
 
     <div class='mobile-post-outer'>
       <a expr:href='data:post.url'>
-        <h3 class='mobile-index-title entry-title' itemprop='name'>
+        <h2 class='mobile-index-title entry-title' itemprop='name'>
           <data:post.title/>
-        </h3>
+        </h2>
 
         <div class='mobile-index-arrow'>&amp;rsaquo;</div>
 
@@ -1378,7 +1385,7 @@ head.appendChild(script);
 
           <a expr:name='data:post.id'/>
           <b:if cond='data:post.title'>
-            <h3 class='post-title entry-title' itemprop='name'>
+            <h2 class='post-title entry-title' itemprop='name'>
               <b:if cond='data:post.link'>
                 <a expr:href='data:post.link'><data:post.title/></a>
               <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
@@ -1386,7 +1393,7 @@ head.appendChild(script);
               <b:else/>
                 <data:post.title/>
               </b:if>
-            </h3>
+            </h2>
           </b:if>
 
           <div class='post-header'>
@@ -1486,13 +1493,13 @@ head.appendChild(script);
 
     <a expr:name='data:post.id'/>
     <b:if cond='data:post.title'>
-      <h3 class='post-title entry-title' itemprop='name'>
+      <h2 class='post-title entry-title' itemprop='name'>
       <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
         <a expr:href='data:post.link ? data:post.link : data:post.url'><data:post.title/></a>
       <b:else/>
         <data:post.title/>
       </b:if>
-      </h3>
+      </h2>
     </b:if>
 
     <div class='post-header'>
