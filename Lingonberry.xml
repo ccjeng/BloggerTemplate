@@ -1578,7 +1578,21 @@ function createSummaryAndThumb(pID){
   }
 </style>
 
-  <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+
+<!-- Syntax Highlighter Additions START 
+<link href='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/styles/shCore.css' rel='stylesheet' type='text/css'/>
+<link href='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+<script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shCore.js' type='text/javascript'/>
+<script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shBrushJava.js' type='text/javascript'/>
+<script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js' type='text/javascript'/>
+<script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shBrushxml.js' type='text/javascript'/>
+ 
+<script language='javascript' type='text/javascript'>
+ SyntaxHighlighter.config.bloggerMode = true;
+ SyntaxHighlighter.all();
+</script>
+Syntax Highlighter Additions END -->
 
 
 </head>
@@ -1590,37 +1604,30 @@ function createSummaryAndThumb(pID){
 <ul class='blog-menunbt'>
 
 <li><a expr:href='data:blog.homepageUrl'>首頁</a></li>
-
-<!--
-<li><a href='#'>Parent Category</a>
-<ul class='sub-menu'>
-<li><a href='#'>Child Category 1</a>
-<ul class='sub-menu'>
-<li><a href='#'>Sub Child Category 1</a></li>
-<li><a href='#'>Sub Child Category 2</a></li>
-<li><a href='#'>Sub Child Category 3</a></li>
-</ul>
-</li>
-<li><a href='#'>Child Category 2</a></li>
-<li><a href='#'>Child Category 3</a></li>
-<li><a href='#'>Child Category 4</a></li>
-</ul>
-</li>-->
-
-<li><a href='#'>作品</a>
-<ul class='sub-menu'>
-<li><a href='https://play.google.com/store/apps/dev?id=7288795824361917426' target='_blank'>Google Play</a></li>
-</ul>
-</li>
-
 <li><a href='#'>關於Andy Cheng</a>
-<ul class='sub-menu'>
-<li><a href='https://plus.google.com/105297955974170001879/about' target='_blank'>Google Profile</a></li>
-<li><a href='https://github.com/ccjeng' target='_blank'>GitHub</a></li>
-</ul>
-
+  <ul class='sub-menu'>
+      <li><a href='https://plus.google.com/105297955974170001879/about' target='_blank'>Google Profile</a></li>
+      <li><a href='https://github.com/ccjeng' target='_blank'>GitHub</a></li>
+      <li><a href='https://twitter.com/ccjeng' target='_blank'>Twitter</a></li>
+  </ul>
 </li>
-
+<li><a href='#'>作品</a>
+  <ul class='sub-menu'>
+    <li><a href='#'>Android</a>
+      <ul class='sub-menu'>
+        <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.buddhavoice2' target='_blank'>佛音</a></li>
+        <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.quicktranslatex' target='_blank'>Quick Translate XD</a></li>
+        <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.tpetrash2' target='_blank'>台北倒垃圾</a></li>
+      </ul>
+    </li>
+    <li><a href='#'>Web</a></li>
+    <li><a href='#'>Book</a>
+      <ul class='sub-menu'>
+        <li><a href='#'>Coming Soon</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
 </ul>
 
 <form action='/search' class='search-formnbt' method='get'>
@@ -2916,7 +2923,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 </div>
 
 <p class='credits-leftnbt'>
-Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <a expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> <a href='mailto:ccjeng@gmail.com'>Andy Cheng</a>
 </p>
 <p class='credits-rightnbt'>
 <!-- you should not edit or remove credits without our permission: newbloggerthemes.com -->
