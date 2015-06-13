@@ -2117,19 +2117,6 @@ $target.after(html);
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML5' locked='false' title='最近看的書' type='HTML'>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
   <b:widget id='Label1' locked='false' title='標籤' type='Label'>
     <b:includable id='main'>
   <b:if cond='data:title != &quot;&quot;'>
