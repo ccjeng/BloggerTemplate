@@ -5,7 +5,7 @@
 <meta content='text/html;charset=UTF-8' http-equiv='Content-type'/>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
 
-<meta content='一個分享技術心得、好用工具、閱讀筆記、旅行經歷的部落格。 技術以網頁開發與Android手機應用程式設計為主。' name='description'/>
+<meta content='一個分享技術心得、好用工具、閱讀筆記、旅行經歷的部落格' name='description'/>
 <meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development' name='keywords'/>
 
 <b:include data='blog' name='all-head-content'/>
@@ -1645,7 +1645,7 @@ Syntax Highlighter Additions END -->
 <b:section class='headersec' id='headersec' maxwidgets='1' showaddelement='no'>
   <b:widget id='Header1' locked='true' title='One Node (標頭)' type='Header'>
     <b:includable id='main'>
-    <h1 class='blog-titlenbt'><a expr:href='data:blog.homepageUrl'><b:include name='title'/><br/><p><b:include name='description'/></p></a></h1>
+    <h1 class='blog-titlenbt'><a expr:href='data:blog.homepageUrl'>&lt; <b:include name='title'/> /&gt;<br/><p><b:include name='description'/></p></a></h1>
     </b:includable>
     <b:includable id='description'><data:description/></b:includable>
     <b:includable id='title'><data:title/></b:includable>
@@ -2296,7 +2296,7 @@ Syntax Highlighter Additions END -->
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <b:if cond='data:post.labels'>
 <div class='post-cat-tagsnbt'>    
-  <p class='post-categoriesnbt'>Categories: <b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if></b:loop></p>
+  <p class='post-categoriesnbt'>分類: <b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if></b:loop></p>
 </div>
 </b:if>
 </b:if>
@@ -2731,7 +2731,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 
 <div class='footer-bnbt widgetsnbt'>
 <b:section class='footersec' id='footersec2' showaddelement='yes'>
-  <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
+  <b:widget id='BlogArchive1' locked='false' title='歷史文章' type='BlogArchive'>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -2831,7 +2831,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='Label1' locked='false' title='Categories' type='Label'>
+  <b:widget id='Label1' locked='false' title='文章分類' type='Label'>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
