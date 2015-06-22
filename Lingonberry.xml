@@ -8,7 +8,7 @@
 <meta content='一個分享技術心得、好用工具、閱讀筆記、旅行經歷的部落格' name='description'/>
 <meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development' name='keywords'/>
 <meta content='1q-5awxOKos7HaSa3tuRxOfJrbgqV7wmFaj-NnaIVsI' name='google-site-verification'/>
-<meta name="msvalidate.01" content="37A1C964DB8F38CA2505D785E33EA429" />
+<meta content='37A1C964DB8F38CA2505D785E33EA429' name='msvalidate.01'/>
 
 <b:include data='blog' name='all-head-content'/>
 <link href='http://fonts.googleapis.com/css?family=Raleway%3A600%2C500%2C400' media='all' rel='stylesheet' type='text/css'/>
@@ -1572,6 +1572,8 @@ function createSummaryAndThumb(pID){
 }
 </style>
 </b:if>
+
+<b:include data='blog' name='google-analytics'/>
 
 <style>
  /*內文字型*/
