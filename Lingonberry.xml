@@ -1584,21 +1584,12 @@ function createSummaryAndThumb(pID){
 
 <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
 
-<!-- Syntax Highlighter Additions START 
-<link href='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/styles/shCore.css' rel='stylesheet' type='text/css'/>
-<link href='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
-<script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shCore.js' type='text/javascript'/>
-<script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shBrushJava.js' type='text/javascript'/>
-<script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js' type='text/javascript'/>
-<script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shBrushxml.js' type='text/javascript'/>
- 
-<script language='javascript' type='text/javascript'>
- SyntaxHighlighter.config.bloggerMode = true;
- SyntaxHighlighter.all();
-</script>
-Syntax Highlighter Additions END -->
-
-
+<!--LazyLoad-->
+<!-- lazy load start www.bloggerspice.com -->
+<script type='text/javascript'>//<![CDATA[
+(function(a){a.fn.lazyload=function(b){var c={threshold:0,failurelimit:0,event:"scroll",effect:"show",container:window};if(b){a.extend(c,b)}var d=this;if("scroll"==c.event){a(c.container).bind("scroll",function(b){var e=0;d.each(function(){if(a.abovethetop(this,c)||a.leftofbegin(this,c)){}else if(!a.belowthefold(this,c)&&!a.rightoffold(this,c)){a(this).trigger("appear")}else{if(e++>c.failurelimit){return false}}});var f=a.grep(d,function(a){return!a.loaded});d=a(f)})}this.each(function(){var b=this;if(undefined==a(b).attr("original")){a(b).attr("original",a(b).attr("src"))}if("scroll"!=c.event||undefined==a(b).attr("src")||c.placeholder==a(b).attr("src")||a.abovethetop(b,c)||a.leftofbegin(b,c)||a.belowthefold(b,c)||a.rightoffold(b,c)){if(c.placeholder){a(b).attr("src",c.placeholder)}else{a(b).removeAttr("src")}b.loaded=false}else{b.loaded=true}a(b).one("appear",function(){if(!this.loaded){a("<img />").bind("load",function(){a(b).hide().attr("src",a(b).attr("original"))[c.effect](c.effectspeed);b.loaded=true}).attr("src",a(b).attr("original"))}});if("scroll"!=c.event){a(b).bind(c.event,function(c){if(!b.loaded){a(b).trigger("appear")}})}});a(c.container).trigger(c.event);return this};a.belowthefold=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).height()+a(window).scrollTop()}else{var d=a(c.container).offset().top+a(c.container).height()}return d<=a(b).offset().top-c.threshold};a.rightoffold=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).width()+a(window).scrollLeft()}else{var d=a(c.container).offset().left+a(c.container).width()}return d<=a(b).offset().left-c.threshold};a.abovethetop=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).scrollTop()}else{var d=a(c.container).offset().top}return d>=a(b).offset().top+c.threshold+a(b).height()};a.leftofbegin=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).scrollLeft()}else{var d=a(c.container).offset().left}return d>=a(b).offset().left+c.threshold+a(b).width()};a.extend(a.expr[":"],{"below-the-fold":"$.belowthefold(a, {threshold : 0, container: window})","above-the-fold":"!$.belowthefold(a, {threshold : 0, container: window})","right-of-fold":"$.rightoffold(a, {threshold : 0, container: window})","left-of-fold":"!$.rightoffold(a, {threshold : 0, container: window})"})})(jQuery);$(function(){$("img").lazyload({placeholder:"http://i22.servimg.com/u/f22/15/42/72/40/grey10.gif",effect:"fadeIn",threshold:"-50"})})//]]></script>
+<!-- lazy load end www.bloggerspice.com -->
+<!--LazyLoad-->
 </head>
 
 <body>
@@ -1623,6 +1614,8 @@ Syntax Highlighter Additions END -->
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.buddhavoice2' target='_blank'>佛音</a></li>
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.quicktranslatex' target='_blank'>Quick Translate XD</a></li>
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.tpetrash2' target='_blank'>台北倒垃圾</a></li>
+        <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.nowweather' target='_blank'>Now Weather</a></li>
+        
       </ul>
     </li>
     <li><a href='#'>Web</a></li>
@@ -2675,7 +2668,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 
 <div class='footer-anbt widgetsnbt'>
 <b:section class='footersec' id='footersec1' preferred='yes'>
-  <b:widget id='PopularPosts1' locked='false' title='熱門文章' type='PopularPosts'>
+  <b:widget id='PopularPosts1' locked='false' title='本月熱門文章' type='PopularPosts'>
     <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
   <div class='widget-content popular-posts'>
@@ -2825,16 +2818,6 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 
 <div class='footer-cnbt widgetsnbt'>
 <b:section class='footersec' id='footersec3' showaddelement='yes'>
-  <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
-    <b:includable id='main'>
-  <div class='widget-content'>
-    <b:if cond='!data:blog.disableAdSenseWidget'>
-      <data:adCode/>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
   <b:widget id='Label1' locked='false' title='文章分類' type='Label'>
     <b:includable id='main'>
   <b:if cond='data:title'>
@@ -2923,7 +2906,6 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   <a href='https://github.com/ccjeng' rel='nofollow' target='_blank' title='Github'><i class='fa fa-github-square'/></a>
   <a href='http://instagram.com/ccjeng' rel='nofollow' target='_blank' title='Instagram'><i class='fa fa-instagram'/></a>
   <a href='http://www.anobii.com/ccjeng/books/' rel='nofollow' target='_blank' title='Anobii'><i class='fa fa-flickr'/></a>
-<!--  <a href='http://tumblr.com/' rel='nofollow' target='_blank' title='Tumblr'><i class='fa fa-tumblr-square'/></a>-->
   <a href='http://feeds.feedburner.com/OneNode' rel='nofollow' target='_blank' title='RSS Feed'><i class='fa fa-rss-square'/></a>  
 </div>
 
@@ -2978,31 +2960,6 @@ html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inlin
 $target.before(html);
 })(jQuery);
  
-/* 文章標題之後 
-(function($) {
-var width = 728,
-height = 90,
-ad_client = "ca-pub-6914084100751028",
-ad_slot = "3983247217",
-$target = $(".post-title"),
-style = "margin: 20px auto; text-align: center;",
-html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
-$target.after(html);
-})(jQuery);
- */
-
-/* 繼續閱讀 */
-(function($) {
-var width = 728,
-height = 90,
-ad_client = "ca-pub-6914084100751028",
-ad_slot = "3983247217",
-$target = $("a[name='more']"),
-style = "margin: 20px auto; text-align: center;",
-html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
-$target.before(html);
-})(jQuery);
- 
 /* 文末位置 */
 (function($) {
 var width = 728,
@@ -3016,6 +2973,7 @@ $target.after(html);
 })(jQuery);
 //]]>
 </script>
+
 </b:if>
 <!-- Adsense 安裝懶人包 end, Designed by WFU BLOG -->
 
