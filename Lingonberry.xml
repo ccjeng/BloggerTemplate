@@ -1586,6 +1586,7 @@ function createSummaryAndThumb(pID){
 <!-- Syntax Highlighter Additions START -->
 <link href='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/styles/shCore.css' rel='stylesheet' type='text/css'/>
 <link href='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>
+
 <script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shCore.js' type='text/javascript'/>
 <script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shBrushJava.js' type='text/javascript'/>
 <script src='https://dl.dropboxusercontent.com/u/128583/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js' type='text/javascript'/>
@@ -2973,7 +2974,7 @@ html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inlin
 $target.before(html);
 })(jQuery);
  
-/* 文末位置 */
+/*
 (function($) {
 var width = 728,
 height = 90,
@@ -2984,6 +2985,7 @@ style = "margin: 20px auto; text-align: center;",
 html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
 $target.after(html);
 })(jQuery);
+*/
 //]]>
 </script>
 
