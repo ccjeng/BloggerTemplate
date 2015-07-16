@@ -5,7 +5,7 @@
 <meta content='text/html;charset=UTF-8' http-equiv='Content-type'/>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
 
-<meta content='一個分享技術心得、好用工具、閱讀筆記、旅行經歷的部落格' name='description'/>
+<!--<meta content='一個分享技術心得&#12289;好用工具&#12289;閱讀筆記&#12289;旅行經歷的部落格' name='description'/>-->
 <meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development' name='keywords'/>
 <meta content='1q-5awxOKos7HaSa3tuRxOfJrbgqV7wmFaj-NnaIVsI' name='google-site-verification'/>
 <meta content='37A1C964DB8F38CA2505D785E33EA429' name='msvalidate.01'/>
@@ -2966,10 +2966,10 @@ jQuery(document).ready(function($) {
 var width = 728,
 height = 90,
 ad_client = "ca-pub-6914084100751028",
-ad_slot = "3983247217",
+ad_slot = "8045553215",
 $target = $(".post-title"),
-style = "margin: 20px auto; text-align: center;",
-html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+style = "text-align: center;",
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
 $target.before(html);
 })(jQuery);
  
