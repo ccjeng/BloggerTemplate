@@ -2259,9 +2259,8 @@ function createSummaryAndThumb(pID){
 <div class='post-metanbt'>
 <b:if cond='data:top.showTimestamp'><b:if cond='data:post.url'><meta expr:content='data:post.canonicalUrl' itemprop='url'/><span class='meta_date'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><span class='published updated' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></span></a></span></b:if><span class='date-sepnbt'> / </span></b:if>
 
-<!--
-<b:if cond='data:top.showAuthor'><span class='post-author vcard'><b:if cond='data:post.authorProfileUrl'><span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'><meta expr:content='data:post.authorProfileUrl' itemprop='url'/><a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'><span itemprop='name'><data:post.author/></span></a></span><b:else/><span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'><data:post.author/></span></span></b:if></span><span class='date-sepnbt'> / </span></b:if>
--->
+
+<b:if cond='data:top.showAuthor'><span class='post-author vcard'><b:if cond='data:post.authorProfileUrl'><span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'><meta expr:content='data:post.authorProfileUrl' itemprop='url'/><span itemprop='name'><data:post.author/></span></span><b:else/><span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'><data:post.author/></span></span></b:if></span><span class='date-sepnbt'> / </span></b:if>
 
 <b:if cond='data:post.allowComments'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>No comments</b:if><b:if cond='data:post.numComments == 1'>1 comment</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> comments</b:if></a><span class='date-sepnbt'> / </span></b:if>
 
@@ -2966,14 +2965,13 @@ jQuery(document).ready(function($) {
 var width = 728,
 height = 90,
 ad_client = "ca-pub-6914084100751028",
-ad_slot = "8045553215",
+ad_slot = "3983247217",
 $target = $(".post-title"),
-style = "text-align: center;",
-html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+style = "margin: 20px auto; text-align: center;",
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
 $target.before(html);
 })(jQuery);
  
-/*
 (function($) {
 var width = 728,
 height = 90,
@@ -2983,6 +2981,29 @@ $target = $(".post-body"),
 style = "margin: 20px auto; text-align: center;",
 html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
 $target.after(html);
+})(jQuery);
+
+/* RWD
+(function($) {
+var width = 728,
+height = 90,
+ad_client = "ca-pub-6914084100751028",
+ad_slot = "8045553215",
+$target = $(".post-title"),
+style = "text-align: center;",
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+$target.before(html);
+})(jQuery);
+ 
+(function($) {
+var width = 728,
+height = 90,
+ad_client = "ca-pub-6914084100751028",
+ad_slot = "8045553215",
+$target = $(".post-body"),
+style = "text-align: center;",
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+$target.before(html);
 })(jQuery);
 */
 //]]>
