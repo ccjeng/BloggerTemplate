@@ -2961,6 +2961,7 @@ jQuery(document).ready(function($) {
 <script>
 //<![CDATA[
 /* 文章標題之前 */
+/*
 (function($) {
 var width = 728,
 height = 90,
@@ -2982,30 +2983,26 @@ style = "margin: 20px auto; text-align: center;",
 html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:inline-block;width:" + width + "px;height:" + height + "px' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
 $target.after(html);
 })(jQuery);
+*/
 
-/* RWD
 (function($) {
-var width = 728,
-height = 90,
-ad_client = "ca-pub-6914084100751028",
+var ad_client = "ca-pub-6914084100751028",
 ad_slot = "8045553215",
 $target = $(".post-title"),
 style = "text-align: center;",
-html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div><br/>";
 $target.before(html);
 })(jQuery);
  
 (function($) {
-var width = 728,
-height = 90,
-ad_client = "ca-pub-6914084100751028",
-ad_slot = "8045553215",
+var ad_client = "ca-pub-6914084100751028",
+ad_slot = "6773969613",
 $target = $(".post-body"),
 style = "text-align: center;",
 html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
-$target.before(html);
+$target.after(html);
 })(jQuery);
-*/
+
 //]]>
 </script>
 
