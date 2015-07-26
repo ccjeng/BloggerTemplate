@@ -2272,8 +2272,9 @@ function createSummaryAndThumb(pID){
 
 <div class='pbtsharethisbutt'>
 <ul class='pbt-social-icons' id='social-post-un'>
-<li class='Share-this-arti'>分享到:&amp;nbsp;&amp;nbsp;</li>
-<li class='pbtfacebook'><a expr:href='&quot;http://www.facebook.com/share.php?v=4&amp;src=bm&amp;u=&quot; + data:post.url + &quot;&amp;t=&quot; + data:post.title' onclick='window.open(this.href,&quot;sharer&quot;,&quot;toolbar=0,status=0,width=626,height=436&quot;); return false;' rel='nofollow' target='_blank' title='Share this on Facebook'><i class='fa fa-facebook-square'/>&amp;nbsp;Facebook</a></li><li class='pbttwitter'><a expr:href='&quot;http://twitter.com/home?status=&quot; + data:post.title + &quot; -- &quot; + data:post.url' rel='nofollow' target='_blank' title='Tweet This!'><i class='fa fa-twitter-square'/>&amp;nbsp;Twitter</a></li><li class='pbtgoogle'><a expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' onclick='javascript:window.open(this.href,   &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;' rel='nofollow' target='_blank' title='Share this on Google+'><i class='fa fa-google-plus-square'/>&amp;nbsp;Google+</a></li>
+
+<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:21px;'/>
+
 </ul>
 </div>
 </b:if>
@@ -2963,7 +2964,7 @@ jQuery(document).ready(function($) {
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <script>
 //<![CDATA[
-/* 文章標題之前 */]
+/* 文章標題之前 */
 (function($) {
 var ad_client = "ca-pub-6914084100751028",
 ad_slot = "8045553215",
@@ -2987,7 +2988,6 @@ $target.after(html);
 
 </b:if>
 <!-- Adsense 安裝懶人包 end, Designed by WFU BLOG -->
-
 
 </body>
 </html>
