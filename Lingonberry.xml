@@ -2261,9 +2261,6 @@ function createSummaryAndThumb(pID){
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <div class='post-metanbt'>
 
-<span>
-<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:20px;'/>
-</span>
 
 <b:if cond='data:top.showTimestamp'><b:if cond='data:post.url'><meta expr:content='data:post.canonicalUrl' itemprop='url'/><span class='meta_date'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><span class='published updated' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></span></a></span></b:if><span class='date-sepnbt'> / </span></b:if>
 
@@ -2276,13 +2273,15 @@ function createSummaryAndThumb(pID){
 
 <b:include data='post' name='postQuickEdit'/>   
 </div>
-<!--
+
 <div class='pbtsharethisbutt'>
 <ul class='pbt-social-icons' id='social-post-un'>
-
+<span>
+<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:20px;'/>
+</span>
 </ul>
 </div>
--->
+
 </b:if>
 </div>
 
