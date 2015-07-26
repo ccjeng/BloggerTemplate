@@ -495,9 +495,9 @@ body > .navigationnbt {
 iframe, object, video { border: none; max-width: 100%; }
 
 .entry-header {
-  padding-bottom: 4.5%;
+  padding-bottom: 2.5%;
   border-bottom: 3px double #EEE;
-  margin-bottom: 4.5%;
+  margin-bottom: 2.5%;
 }
 
 .post-title {
@@ -2260,23 +2260,29 @@ function createSummaryAndThumb(pID){
       </h2>
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <div class='post-metanbt'>
+
+<span>
+<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:20px;'/>
+</span>
+
 <b:if cond='data:top.showTimestamp'><b:if cond='data:post.url'><meta expr:content='data:post.canonicalUrl' itemprop='url'/><span class='meta_date'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><span class='published updated' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></span></a></span></b:if><span class='date-sepnbt'> / </span></b:if>
 
 
 <b:if cond='data:top.showAuthor'><span class='post-author vcard'><b:if cond='data:post.authorProfileUrl'><span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'><meta expr:content='data:post.authorProfileUrl' itemprop='url'/><span itemprop='name'><data:post.author/></span></span><b:else/><span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'><span itemprop='name'><data:post.author/></span></span></b:if></span><span class='date-sepnbt'> / </span></b:if>
 
-<b:if cond='data:post.allowComments'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>No comments</b:if><b:if cond='data:post.numComments == 1'>1 comment</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> comments</b:if></a><span class='date-sepnbt'> / </span></b:if>
+<b:if cond='data:post.allowComments'><a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 0'>No comments</b:if><b:if cond='data:post.numComments == 1'>1 comment</b:if><b:if cond='data:post.numComments &gt;= 2'><data:post.numComments/> comments</b:if></a><span class='date-sepnbt'> </span>
+
+</b:if>
 
 <b:include data='post' name='postQuickEdit'/>   
 </div>
-
+<!--
 <div class='pbtsharethisbutt'>
 <ul class='pbt-social-icons' id='social-post-un'>
 
-<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:21px;'/>
-
 </ul>
 </div>
+-->
 </b:if>
 </div>
 
