@@ -1146,7 +1146,7 @@ code, kbd, pre {
   .post-title { font-size: 1.5em; }
   
   .post-metanbt .post-authornbt {}
-  .post-metanbt .date-sepnbt:nth-of-type(2) { display: none; }
+/* .post-metanbt .date-sepnbt:nth-of-type(2) { display: none; }*/
     
   /* Post content --------------------------------------- */
   
@@ -1607,10 +1607,25 @@ function createSummaryAndThumb(pID){
 <!-- lazy load end www.bloggerspice.com -->
 <!--LazyLoad-->
 
-<!-- 將這個標記放在標頭中，或放在內文結尾標記前面。 -->
-<script async='async' src="https://apis.google.com/js/platform.js">
+
+<!-- 將這個標記放在標頭中&#65292;或放在內文結尾標記前面&#12290; -->
+<!--<script src="https://apis.google.com/js/platform.js" async="async">
   {lang: 'zh-TW'}
 </script>
+-->
+<script src='https://apis.google.com/js/plusone.js' type='text/javascript'/>
+
+<!--
+<script>
+ (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&amp;version=v2.4&amp;appId=497828857040391";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+-->
 
 </head>
 
@@ -1641,10 +1656,10 @@ function createSummaryAndThumb(pID){
       </ul>
     </li>
     <li><a href='#'>Web</a>
-	      <ul class='sub-menu'>
+        <ul class='sub-menu'>
         <li><a href='http://shorten.ccjeng.com' target='_blank'>Shorten Me!</a></li>        
       </ul>
-	</li>
+  </li>
     <li><a href='#'>Book</a>
       <ul class='sub-menu'>
         <li><a href='#'>Coming Soon</a></li>
@@ -2286,12 +2301,13 @@ function createSummaryAndThumb(pID){
 
 <div class='pbtsharethisbutt'>
 <ul class='pbt-social-icons' id='social-post-un'>
+
 <span>
 <iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:20px;'/>
 </span>
+
 <span>
-<!-- 在您要顯示「+1 按鈕」的位置放上這個標記。 -->
-<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+<g:plusone data-href="data:post.canonicalUrl" data-size="medium" data-annotation="inline" data-width="300"></g:plusone>
 </span>
 
 </ul>
@@ -3008,7 +3024,6 @@ $target.after(html);
 
 </b:if>
 <!-- Adsense 安裝懶人包 end, Designed by WFU BLOG -->
-
 
 </body>
 </html>
