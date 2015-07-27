@@ -1606,6 +1606,12 @@ function createSummaryAndThumb(pID){
 (function(a){a.fn.lazyload=function(b){var c={threshold:0,failurelimit:0,event:"scroll",effect:"show",container:window};if(b){a.extend(c,b)}var d=this;if("scroll"==c.event){a(c.container).bind("scroll",function(b){var e=0;d.each(function(){if(a.abovethetop(this,c)||a.leftofbegin(this,c)){}else if(!a.belowthefold(this,c)&&!a.rightoffold(this,c)){a(this).trigger("appear")}else{if(e++>c.failurelimit){return false}}});var f=a.grep(d,function(a){return!a.loaded});d=a(f)})}this.each(function(){var b=this;if(undefined==a(b).attr("original")){a(b).attr("original",a(b).attr("src"))}if("scroll"!=c.event||undefined==a(b).attr("src")||c.placeholder==a(b).attr("src")||a.abovethetop(b,c)||a.leftofbegin(b,c)||a.belowthefold(b,c)||a.rightoffold(b,c)){if(c.placeholder){a(b).attr("src",c.placeholder)}else{a(b).removeAttr("src")}b.loaded=false}else{b.loaded=true}a(b).one("appear",function(){if(!this.loaded){a("<img />").bind("load",function(){a(b).hide().attr("src",a(b).attr("original"))[c.effect](c.effectspeed);b.loaded=true}).attr("src",a(b).attr("original"))}});if("scroll"!=c.event){a(b).bind(c.event,function(c){if(!b.loaded){a(b).trigger("appear")}})}});a(c.container).trigger(c.event);return this};a.belowthefold=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).height()+a(window).scrollTop()}else{var d=a(c.container).offset().top+a(c.container).height()}return d<=a(b).offset().top-c.threshold};a.rightoffold=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).width()+a(window).scrollLeft()}else{var d=a(c.container).offset().left+a(c.container).width()}return d<=a(b).offset().left-c.threshold};a.abovethetop=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).scrollTop()}else{var d=a(c.container).offset().top}return d>=a(b).offset().top+c.threshold+a(b).height()};a.leftofbegin=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).scrollLeft()}else{var d=a(c.container).offset().left}return d>=a(b).offset().left+c.threshold+a(b).width()};a.extend(a.expr[":"],{"below-the-fold":"$.belowthefold(a, {threshold : 0, container: window})","above-the-fold":"!$.belowthefold(a, {threshold : 0, container: window})","right-of-fold":"$.rightoffold(a, {threshold : 0, container: window})","left-of-fold":"!$.rightoffold(a, {threshold : 0, container: window})"})})(jQuery);$(function(){$("img").lazyload({placeholder:"http://i22.servimg.com/u/f22/15/42/72/40/grey10.gif",effect:"fadeIn",threshold:"-50"})})//]]></script>
 <!-- lazy load end www.bloggerspice.com -->
 <!--LazyLoad-->
+
+<!-- 將這個標記放在標頭中，或放在內文結尾標記前面。 -->
+<script async='async' src="https://apis.google.com/js/platform.js">
+  {lang: 'zh-TW'}
+</script>
+
 </head>
 
 <body>
@@ -1634,7 +1640,11 @@ function createSummaryAndThumb(pID){
         
       </ul>
     </li>
-    <li><a href='#'>Web</a></li>
+    <li><a href='#'>Web</a>
+	      <ul class='sub-menu'>
+        <li><a href='http://shorten.ccjeng.com' target='_blank'>Shorten Me!</a></li>        
+      </ul>
+	</li>
     <li><a href='#'>Book</a>
       <ul class='sub-menu'>
         <li><a href='#'>Coming Soon</a></li>
@@ -2279,6 +2289,11 @@ function createSummaryAndThumb(pID){
 <span>
 <iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:20px;'/>
 </span>
+<span>
+<!-- 在您要顯示「+1 按鈕」的位置放上這個標記。 -->
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+</span>
+
 </ul>
 </div>
 
@@ -2993,6 +3008,7 @@ $target.after(html);
 
 </b:if>
 <!-- Adsense 安裝懶人包 end, Designed by WFU BLOG -->
+
 
 </body>
 </html>
