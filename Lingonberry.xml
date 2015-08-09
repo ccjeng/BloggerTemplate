@@ -1652,7 +1652,8 @@ function createSummaryAndThumb(pID){
     </li>
     <li><a href='#'>Web</a>
         <ul class='sub-menu'>
-        <li><a href='http://shorten.ccjeng.com' target='_blank'>Shorten Me!</a></li>        
+        <li><a href='http://shorten.ccjeng.com' target='_blank'>Shorten Me!</a></li>
+        <li><a href='http://taipeidisaster.ccjeng.com/' target='_blank'>台北市災害動態資訊</a></li>        
       </ul>
   </li>
     <li><a href='#'>Book</a>
