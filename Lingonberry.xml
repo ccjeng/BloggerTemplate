@@ -1648,6 +1648,7 @@ function createSummaryAndThumb(pID){
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.buddhavoice2' target='_blank'>佛音</a></li>
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.quicktranslatex' target='_blank'>Quick Translate XD</a></li>
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.tpetrash2' target='_blank'>台北倒垃圾</a></li>
+        <li><a href='https://play.google.com/store/apps/details?id=com.ccjeng.tptrashcan' target='_blank'>台北丟垃圾</a></li>
       </ul>
     </li>
     <li><a href='#'>Web</a>
@@ -2298,7 +2299,7 @@ function createSummaryAndThumb(pID){
 </span>
 
 <span>
-<g:plusone data-href="data:post.canonicalUrl" data-size="medium" data-annotation="inline" data-width="300"></g:plusone>
+<g:plusone data-annotation='inline' data-href='data:post.canonicalUrl' data-size='medium' data-width='300'/>
 </span>
 
 </ul>
