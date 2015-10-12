@@ -2294,17 +2294,16 @@ function createSummaryAndThumb(pID){
 <b:include data='post' name='postQuickEdit'/>   
 </div>
 
-<div class='pbtsharethisbutt'>
+<div class='pbtsharethisbutt'>  
 <ul class='pbt-social-icons' id='social-post-un'>
-
-<span>
-<iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:20px;'/>
-</span>
-
-<span>
-<g:plusone data-annotation='inline' data-href='data:post.canonicalUrl' data-size='medium' data-width='300'/>
-</span>
-
+<b:if cond='data:blog.pageType == &quot;item&quot;'>
+  <span>
+    <iframe allowTransparency='true' expr:src='&quot;http://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:20px;'/>
+  </span>
+  <span>
+    <g:plusone data-annotation='inline' data-href='data:post.canonicalUrl' data-size='medium' data-width='300'/>
+  </span>
+</b:if>
 </ul>
 </div>
 
