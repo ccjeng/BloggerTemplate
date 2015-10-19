@@ -1654,7 +1654,7 @@ function createSummaryAndThumb(pID){
     <li><a href='#'>Web</a>
         <ul class='sub-menu'>
         <li><a href='http://shorten.ccjeng.com' target='_blank'>Shorten Me!</a></li>
-        <li><a href='http://geocoder.ccjeng.com/' target='_blank'>Batch Geocoder 地址經緯度批次轉換</a></li> 
+        <li><a href='http://geocoder.ccjeng.com/' target='_blank'>地址經緯度批次轉換</a></li> 
         <li><a href='http://taipeidisaster.ccjeng.com/' target='_blank'>台北市災害動態資訊</a></li>  
         <li><a href='http://bin.ccjeng.com/' target='_blank'>台北丟垃圾 (網頁版)</a></li> 
         <li><a href='http://truck.ccjeng.com/' target='_blank'>新北市垃圾車即時資訊</a></li>                 
