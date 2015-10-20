@@ -15,10 +15,10 @@
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
 <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'/>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
-<title><data:blog.pageTitle/></title> 
+<title>[ <data:blog.pageTitle/> ]</title> 
 <b:else/>
 <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-<title><data:blog.pageName/> ~ <data:blog.title/></title>
+<title><data:blog.pageName/> - [ <data:blog.title/> ]</title>
 <b:else/>
 <title>404 ~ Page Not Found!</title>
 </b:if>
@@ -1633,6 +1633,7 @@ function createSummaryAndThumb(pID){
 <ul class='blog-menunbt'>
 
 <li><a expr:href='data:blog.homepageUrl'>首頁</a></li>
+<li><a href='http://feeds.feedburner.com/OneNode' target='_blank'>RSS Feed</a></li>
 <li><a href='#'>關於Andy Cheng</a>
   <ul class='sub-menu'>
       <li><a href='https://plus.google.com/105297955974170001879/about' target='_blank'>Google Profile</a></li>
@@ -1678,7 +1679,7 @@ function createSummaryAndThumb(pID){
 <b:section class='headersec' id='headersec' maxwidgets='1' showaddelement='no'>
   <b:widget id='Header1' locked='true' title='One Node (標頭)' type='Header'>
     <b:includable id='main'>
-    <h1 class='blog-titlenbt'><a expr:href='data:blog.homepageUrl'>&lt; <b:include name='title'/> /&gt;<br/><p><b:include name='description'/></p></a></h1>
+    <h1 class='blog-titlenbt'><a expr:href='data:blog.homepageUrl'>{ <b:include name='title'/> }<br/><p><b:include name='description'/></p></a></h1>
     </b:includable>
     <b:includable id='description'><data:description/></b:includable>
     <b:includable id='title'><data:title/></b:includable>
