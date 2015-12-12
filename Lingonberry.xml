@@ -18,7 +18,7 @@
 <title>[ <data:blog.pageTitle/> ]</title> 
 <b:else/>
 <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
-<title><data:blog.pageName/> - [ <data:blog.title/> ]</title>
+<title><data:blog.pageName/> - [<data:blog.title/>]</title>
 <b:else/>
 <title>404 ~ Page Not Found!</title>
 </b:if>
@@ -1650,6 +1650,7 @@ function createSummaryAndThumb(pID){
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.quicktranslatex' target='_blank'>Quick Translate XD</a></li>
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.tpetrash2' target='_blank'>台北倒垃圾</a></li>
         <li><a href='https://play.google.com/store/apps/details?id=com.ccjeng.tptrashcan' target='_blank'>台北丟垃圾</a></li>
+        <li><a href='https://play.google.com/store/apps/details?id=com.ccjeng.news' target='_blank'>樹懶新聞 Sloth News</a></li>
       </ul>
     </li>
     <li><a href='#'>Web</a>
