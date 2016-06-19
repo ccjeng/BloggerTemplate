@@ -15,7 +15,7 @@
 <link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
 <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'/>
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
-<title>[ <data:blog.pageTitle/> ]</title> 
+<title>[ <data:blog.pageTitle/> ]</title>
 <b:else/>
 <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
 <title><data:blog.pageName/> - [<data:blog.title/>]</title>
@@ -75,7 +75,7 @@ table {
 
 ol, ul { list-style:none; }
 
-blockquote:before, 
+blockquote:before,
 blockquote:after { content:""; }
 
 a { outline:none; }
@@ -124,10 +124,10 @@ body a:hover {
   text-decoration: none;
 }
 
-* { 
-  box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 img {
@@ -277,7 +277,7 @@ body > .navigationnbt {
   -moz-border-radius: 0 0 4px 4px;
   -webkit-border-radius: 0 0 4px 4px;
 }
-  
+
 .nav-togglenbt:hover { cursor: pointer; }
 
 .nav-togglenbt .barnbt {
@@ -421,7 +421,7 @@ body > .navigationnbt {
   word-break: normal;
 }
 
-.navigationnbt .search-formnbt #snbt:focus { background-color: rgba(255,255,255,0.075); background-position: 15px center; } 
+.navigationnbt .search-formnbt #snbt:focus { background-color: rgba(255,255,255,0.075); background-position: 15px center; }
 
 /* -------------------------------------------------------------------------------- */
 /*  5. Main content
@@ -454,7 +454,7 @@ body > .navigationnbt {
   z-index: 1;
 }
 
-.post { 
+.post {
   margin-top: 50px;
   position: relative;
 }
@@ -463,7 +463,7 @@ body > .navigationnbt {
 
 .content-innernbt {
   width: 87.5%;
-  float: right; 
+  float: right;
   position: relative;
   padding: 5.5%;
   background: #FFF;
@@ -517,7 +517,7 @@ iframe, object, video { border: none; max-width: 100%; }
   border-radius: 999px;
   position: absolute;
   z-index: 10;
-  border: 3px solid #FFF; 
+  border: 3px solid #FFF;
   text-indent: -9999px;
 }
 
@@ -835,7 +835,7 @@ code, kbd, pre {
 .footernbt .widget { margin-top: 2em; }
 .footernbt .widget:first-child { margin-top: 0; }
 
-.footernbt .widget h2 { 
+.footernbt .widget h2 {
   font-size: 0.875em;
   font-weight: bold;
   text-transform: uppercase;
@@ -844,7 +844,7 @@ code, kbd, pre {
   line-height: 1;
 }
 
-.footernbt .widget h3 { 
+.footernbt .widget h3 {
   font-size: 0.875em;
   font-weight: bold;
   text-transform: uppercase;
@@ -916,64 +916,64 @@ code, kbd, pre {
 /*  13. Responsive
 /* -------------------------------------------------------------------------------- */
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
   /* 2X images */
 
   .headernbt .logonbt { background-image: url(https://4.bp.blogspot.com/-DLgD7OTo2-o/VCOA2HDl6mI/AAAAAAAAOhk/mSu2LVFbx9g/s1600/home.png); }
   .navigationnbt #s { background-image: url(https://4.bp.blogspot.com/-F8Z04_6jMUg/VCOA5fQBoXI/AAAAAAAAOiY/-2Bjz1YwxN0/s1600/search.png); }
-  
+
   a.format-bubblenbt { background-image: url(https://2.bp.blogspot.com/-IXxG_5ImGwQ/VCOA-Ono2oI/AAAAAAAAOkE/M0cQKFBtNA8/s1600/standard.png) }
-  
+
   a.sticky-bubblenbt { background-image: url(https://1.bp.blogspot.com/-XakMRSW3dNI/VCOA5zV_rpI/AAAAAAAAOig/ohMSIszRmD8/s1600/sticky.png); }
-  
+
   .contentnbt input#s,
   .footernbt input#s { background-image: url(https://2.bp.blogspot.com/-NxnP6hKECpc/VCOA49hve2I/AAAAAAAAOiQ/T4Jj1E7zGaU/s1600/search-h.png); }
-  
+
   .contentnbt input#s:focus,
   .footernbt input#s:focus { background-image: url(https://4.bp.blogspot.com/-F8Z04_6jMUg/VCOA5fQBoXI/AAAAAAAAOiY/-2Bjz1YwxN0/s1600/search.png); }
-  
+
 }
 
 @media (max-width: 1100px) {
-  
+
   .blog-menunbt ul {
     opacity: 1;
     display: none;
   }
-  
+
   .blog-menunbt li:hover > ul { display: block; }
-  
+
   /* Post formats --------------------------------------- */
-    
+
   .flex-direction-nav .flex-prev { opacity: 1; -moz-opacity: 1; -khtml-opacity: 1; filter: alpha(opacity=100); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
   .flex-direction-nav .flex-next { opacity: 1; -moz-opacity: 1; -khtml-opacity: 1; filter: alpha(opacity=100); -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
-  
+
 }
 
 
 @media (max-width: 864px) {
-  
+
   /* Structure --------------------------------------- */
-  
+
   .section-innernbt { width: 94%; }
-  
+
   .navigation-innernbt { width: 100%; }
-  
+
   .contentnbt { padding: 6% 0; }
-  
+
   /* Main content --------------------------------------- */
-    
+
   /* Credits --------------------------------------- */
-  
+
   .credits-innernbt { padding: 4.8% 0; }
-  
+
 }
 
 @media (max-width: 800px) {
 
   body { font-size: 16px; }
-  
+
 }
 
 @media (max-width: 770px) {
@@ -981,35 +981,35 @@ code, kbd, pre {
   /* Header --------------------------------------- */
 
   .header-innernbt { padding: 30px 0; }
-  
+
   .headernbt .logonbt { margin-left: -10px; }
-  
+
   .headernbt .blog-titlenbt {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  
-  /* Navigation --------------------------------------- */  
-  
+
+  /* Navigation --------------------------------------- */
+
   .navigation-innernbt.section-innernbt {
     width: 100%;
     padding: 0;
   }
-  
+
   .navigationnbt ul,
   .navigationnbt li,
   .navigationnbt .search-formnbt {
     float: none;
     border: none;
   }
-  
+
   .navigationnbt a { border-bottom: 1px solid #363F4A; }
-  
+
   .navigationnbt .search-formnbt { width: 100%; max-width: none; }
-  
+
   .navigationnbt a,
   .navigationnbt .search-formnbt #snbt { font-size: 14px; }
-  
+
   .blog-menunbt li ul {
     display: block;
     left: 0;
@@ -1020,26 +1020,26 @@ code, kbd, pre {
     -webkit-border-radius: 0;
     width: 100%;
   }
-  
+
   .blog-menunbt .has-children:after,
   .blog-menunbt ul > .has-children:after { content: none; }
-    
+
   .blog-menunbt li:hover a { background: none; }
   .blog-menunbt li a:hover { background: #363F4A; }
-  
+
   .blog-menunbt li ul a {
     width: auto;
     margin: 0;
     text-align: left;
   }
-  
+
   .blog-menunbt li ul li a { padding-left: 12.5%; }
   .blog-menunbt li ul li ul li a { padding-left: 20%; }
   .blog-menunbt li ul li ul li ul li a { padding-left: 27.5%; }
   .blog-menunbt li ul li ul li ul li ul li a { padding-left: 35%; }
   .blog-menunbt li ul li ul li ul li ul li ul li a { padding-left: 42.5%; }
   .blog-menunbt li ul li ul li ul li ul li ul li ul li a { padding-left: 50%; }
-    
+
   .blog-menunbt ul li a::before {
     content: "";
     border: 6px solid transparent;
@@ -1048,9 +1048,9 @@ code, kbd, pre {
     margin-left: -7.5%;
     margin-top: 5px;
   }
-  
+
   .blog-menunbt ul li a:hover::before { border-left-color: #FFF; }
-  
+
   .blog-menunbt ul li:hover > ul {
     margin-top: 0px;
     top: 0;
@@ -1059,14 +1059,14 @@ code, kbd, pre {
     padding: 0;
     padding-right: 0px;
   }
-    
+
   .blog-menunbt ul li > ul li:first-child::after { content: none; }
-    
+
   /* Main content --------------------------------------- */
-  
+
   .contentnbt:before { left: 30px; }
   .contentnbt:after { left: 39px; }
-  
+
   a.format-bubblenbt { left: 15px; }
   a.sticky-bubblenbt { left: 21px; }
 
@@ -1075,22 +1075,22 @@ code, kbd, pre {
 @media ( max-width: 600px ) {
 
   body { font-size: 15px; }
-  
+
   /* Structure --------------------------------------- */
-  
+
   .contentnbt:before,
   .contentnbt:after,
   .content-innernbt:after,
-  .content-innernbt:before { 
-    display: none; 
+  .content-innernbt:before {
+    display: none;
   }
-  
+
   .section-innernbt { width: 90%; }
-  
+
   /* Header --------------------------------------- */
-  
+
   .header-innernbt.section-innernbt { padding: 5.5% 0; }
-  
+
   .headernbt .logonbt,
   .headernbt .blog-titlenbt {
     float: none;
@@ -1105,7 +1105,7 @@ code, kbd, pre {
     margin: 0 auto;
     background-size: 24px auto;
   }
-  
+
   .headernbt .blog-titlenbt {
     margin-top: 15px;
     line-height: 1;
@@ -1115,21 +1115,21 @@ code, kbd, pre {
 .blog-titlenbt p {
   text-align: center;
 }
-  
+
   /* Main content --------------------------------------- */
-  
-  .contentnbt { 
-    padding: 0; 
+
+  .contentnbt {
+    padding: 0;
     background: #FFF;
     width: 100%;
   }
-  
-  .post { 
-    border-bottom: 1px solid #EEE; 
-    margin-top: 0; 
+
+  .post {
+    border-bottom: 1px solid #EEE;
+    margin-top: 0;
   }
-    
-  .content-innernbt { 
+
+  .content-innernbt {
     width: 100% !important;
     float: none;
     margin-left: 0;
@@ -1138,18 +1138,18 @@ code, kbd, pre {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
   }
-  
+
   .post-bubblesnbt { display: none; }
-  
+
   .entry-header { margin-bottom: 20px; }
-  
+
   .post-title { font-size: 1.5em; }
-  
+
   .post-metanbt .post-authornbt {}
 /* .post-metanbt .date-sepnbt:nth-of-type(2) { display: none; }*/
-    
+
   /* Post content --------------------------------------- */
-  
+
   .post-body p,
   .post-body blockquote,
   .post-body ul,
@@ -1160,19 +1160,19 @@ code, kbd, pre {
   .post-body pre {
     line-height: 160%;
   }
-  
+
   .post-body h1 { font-size: 1.5em; }
 
   .post-body h2 { font-size: 1.375em; }
-  
+
   .post-body h3 { font-size: 1.25em; }
-  
+
   .post-body h4 { font-size: 1.1em; }
-  
+
   .post-body h5 { font-size: 1em; }
-  
+
   .post-body h6 { font-size: 0.9em; }
-  
+
   .post-body .alignleft,
   .post-body .alignright {
     display: block;
@@ -1181,36 +1181,36 @@ code, kbd, pre {
     margin: 0 auto 1em auto;
     text-align: center;
   }
-  
+
   .post-body hr { width: 75%; }
-  
+
   /* Page & Page Templates --------------------------------------- */
-  
+
   /* Footer --------------------------------------- */
-  
+
   .footer-innernbt { padding: 5.5% 0; }
-  
+
   .widgetsnbt {
     width: 100%;
     margin-left: 0;
     margin-top: 2em;
   }
-  
+
   .widgetsnbt:first-child { margin-top: 0; }
-  
+
   .footernbt .widget h2 { font-size: 0.925em; font-weight: bold; }
   .footernbt .widget h3 { font-size: 0.925em; font-weight: bold; }
-  
+
   .footernbt .widget .widget-content { font-size: 1em; }
-  
+
   /* Credits --------------------------------------- */
-  
+
   .creditsnbt { font-size: 0.925em; }
-  
+
   .credits-innernbt { padding: 30px 0; }
-  
+
   .creditsnbt span { display: none; }
-  
+
 }
 
 h2.date-header {
@@ -1456,26 +1456,26 @@ function rp(json){document.write('<ul>');for(var i=0;i<numposts;i++){document.wr
 summary_noimg = 350;
 summary_img = 225;
 img_thumb_height = 150;
-img_thumb_width = 200; 
+img_thumb_width = 200;
 </script>
 <script type='text/javascript'>
 //<![CDATA[
 
-function removeHtmlTag(strx,chop){ 
+function removeHtmlTag(strx,chop){
   if(strx.indexOf("<")!=-1)
   {
-    var s = strx.split("<"); 
-    for(var i=0;i<s.length;i++){ 
-      if(s[i].indexOf(">")!=-1){ 
-        s[i] = s[i].substring(s[i].indexOf(">")+1,s[i].length); 
-      } 
-    } 
-    strx =  s.join(""); 
+    var s = strx.split("<");
+    for(var i=0;i<s.length;i++){
+      if(s[i].indexOf(">")!=-1){
+        s[i] = s[i].substring(s[i].indexOf(">")+1,s[i].length);
+      }
+    }
+    strx =  s.join("");
   }
-  chop = (chop < strx.length-1) ? chop : strx.length-2; 
-  while(strx.charAt(chop-1)!=' ' && strx.indexOf(' ',chop)!=-1) chop++; 
-  strx = strx.substring(0,chop-1); 
-  return strx+'...'; 
+  chop = (chop < strx.length-1) ? chop : strx.length-2;
+  while(strx.charAt(chop-1)!=' ' && strx.indexOf(' ',chop)!=-1) chop++;
+  strx = strx.substring(0,chop-1);
+  return strx+'...';
 }
 
 function createSummaryAndThumb(pID){
@@ -1483,11 +1483,11 @@ function createSummaryAndThumb(pID){
   var imgtag = "";
   var img = div.getElementsByTagName("img");
   var summ = summary_noimg;
-  if(img.length>=1) { 
+  if(img.length>=1) {
     imgtag = '<img src="'+img[0].src+'" class="pbtthumbimg"/>';
     summ = summary_img;
   }
-  
+
   var summary = imgtag + '<div>' + removeHtmlTag(div.innerHTML,summ) + '</div>';
   div.innerHTML = summary;
 }
@@ -1592,7 +1592,7 @@ function createSummaryAndThumb(pID){
 <script src='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJava.min.js' type='text/javascript'/>
 <script src='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js' type='text/javascript'/>
 <script src='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushXml.min.js' type='text/javascript'/>
-<script src='//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=sunburst'/>
+<script src='//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css'/>
 
 <script language='javascript' type='text/javascript'>
   SyntaxHighlighter.config.bloggerMode = true;
@@ -1630,7 +1630,7 @@ function createSummaryAndThumb(pID){
 </head>
 
 <body>
-  
+
 <div class='navigationnbt'>
 <div class='navigation-innernbt section-innernbt'>
 <ul class='blog-menunbt'>
@@ -1659,10 +1659,10 @@ function createSummaryAndThumb(pID){
     <li><a href='#'>Web</a>
         <ul class='sub-menu'>
         <li><a href='http://shorten.ccjeng.com' target='_blank'>Shorten Me!</a></li>
-        <li><a href='http://geocoder.ccjeng.com/' target='_blank'>地址經緯度批次轉換</a></li> 
-        <li><a href='http://taipeidisaster.ccjeng.com/' target='_blank'>台北市災害動態資訊</a></li>  
-        <li><a href='http://bin.ccjeng.com/' target='_blank'>台北丟垃圾 (網頁版)</a></li> 
-        <li><a href='http://truck.ccjeng.com/' target='_blank'>新北市垃圾車即時資訊</a></li>                 
+        <li><a href='http://geocoder.ccjeng.com/' target='_blank'>地址經緯度批次轉換</a></li>
+        <li><a href='http://taipeidisaster.ccjeng.com/' target='_blank'>台北市災害動態資訊</a></li>
+        <li><a href='http://bin.ccjeng.com/' target='_blank'>台北丟垃圾 (網頁版)</a></li>
+        <li><a href='http://truck.ccjeng.com/' target='_blank'>新北市垃圾車即時資訊</a></li>
       </ul>
   </li>
   </ul>
@@ -1670,7 +1670,7 @@ function createSummaryAndThumb(pID){
 </ul>
 
 <form action='/search' class='search-formnbt' method='get'>
-  <input id='snbt' name='q' onblur='if(this.value==&apos;&apos;)this.value=&apos;Type and press enter&apos;;' onfocus='if(this.value==&apos;Type and press enter&apos;)this.value=&apos;&apos;;' type='search' value='Type and press enter'/> 
+  <input id='snbt' name='q' onblur='if(this.value==&apos;&apos;)this.value=&apos;Type and press enter&apos;;' onfocus='if(this.value==&apos;Type and press enter&apos;)this.value=&apos;&apos;;' type='search' value='Type and press enter'/>
   <input class='buttonnbt hiddennbt' id='searchsubmitnbt' type='submit' value='Search'/>
 </form>
 <div class='clearnbt'/>
@@ -1681,7 +1681,7 @@ function createSummaryAndThumb(pID){
 <div class='header-innernbt section-innernbt'>
 <a class='logonbt noimgnbt' expr:href='data:blog.homepageUrl'/>
 <b:section class='headersec' id='headersec' maxwidgets='1' showaddelement='no'>
-  <b:widget id='Header1' locked='true' title='鍵盤自耕農 (標頭)' type='Header'>
+  <b:widget id='Header1' locked='true' title='鍵盤自耕農 (標頭)' type='Header' version='1' visible='true'>
     <b:includable id='main'>
     <h1 class='blog-titlenbt'><a expr:href='data:blog.homepageUrl'>{ <b:include name='title'/> }<br/><p><b:include name='description'/></p></a></h1>
     </b:includable>
@@ -1702,7 +1702,7 @@ function createSummaryAndThumb(pID){
 <div class='contentnbt section-innernbt'>
 <div class='postsnbt'>
 <b:section class='mainblogsec' id='mainblogsec' showaddelement='no'>
-  <b:widget id='Blog1' locked='true' title='網誌文章' type='Blog'>
+  <b:widget id='Blog1' locked='true' title='網誌文章' type='Blog' version='1' visible='true'>
     <b:includable id='main' var='top'>
   <b:if cond='data:mobile == &quot;false&quot;'>
 
@@ -1796,7 +1796,7 @@ function createSummaryAndThumb(pID){
     <b:includable id='backlinkDeleteIcon' var='backlink'>
   <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
     <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
-      <img src='//www.blogger.com/img/icon_delete13.gif'/>
+      <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
     </a>
   </span>
 </b:includable>
@@ -1858,7 +1858,7 @@ function createSummaryAndThumb(pID){
       </div>
     <b:else/>
       <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'>
-        <img src='//www.blogger.com/img/icon_delete13.gif'/>
+        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
       </a>
     </b:if>
   </span>
@@ -2271,7 +2271,7 @@ function createSummaryAndThumb(pID){
 </div>
 
 <div class='content-innernbt'>
-  
+
 <div class='entry-header'>
       <h2 class='post-title entry-title' itemprop='name'>
      <b:if cond='data:post.link'>
@@ -2297,10 +2297,10 @@ function createSummaryAndThumb(pID){
 
 </b:if>
 
-<b:include data='post' name='postQuickEdit'/>   
+<b:include data='post' name='postQuickEdit'/>
 </div>
 
-<div class='pbtsharethisbutt'>  
+<div class='pbtsharethisbutt'>
 <ul class='pbt-social-icons' id='social-post-un'>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
   <span>
@@ -2344,13 +2344,13 @@ function createSummaryAndThumb(pID){
 
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <b:if cond='data:post.labels'>
-<div class='post-cat-tagsnbt'>    
+<div class='post-cat-tagsnbt'>
   <p class='post-categoriesnbt'>分類: <b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if></b:loop></p>
 </div>
 </b:if>
 </b:if>
 
-      <b:if cond='data:blog.pageType == &quot;item&quot;'>    
+      <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <div class='post-iconspbt'>
       <span class='post-icons' style='padding-right:10px;'>
         <!-- email post links -->
@@ -2362,7 +2362,7 @@ function createSummaryAndThumb(pID){
           </span>
         </b:if>
       </span>
-    
+
       <!-- share buttons -->
       <div class='post-share-buttons goog-inline-block'>
         <b:if cond='data:post.sharePostUrl'>
@@ -2372,7 +2372,7 @@ function createSummaryAndThumb(pID){
     <div style='clear: both;'/>
     </div>
     </b:if>
-    
+
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <div class='post-location post-locationpbt'>
         <b:if cond='data:top.showLocation'>
@@ -2383,7 +2383,7 @@ function createSummaryAndThumb(pID){
         </b:if>
       </div>
     </b:if>
-    
+
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <b:if cond='data:post.authorAboutMe'>
         <div class='author-profile' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
@@ -2401,7 +2401,7 @@ function createSummaryAndThumb(pID){
         </div>
       </b:if>
     </b:if>
-  
+
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <div class='related-postbwrap' id='bpostrelated-post'/>
 <div style='clear: both;'/>
@@ -2711,16 +2711,55 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   </div>
 </b:includable>
   </b:widget>
+  <b:widget id='HTML2' locked='false' title='Disqus' type='HTML' visible='true'>
+    <b:includable id='main'>
+            <script type='text/javascript'>
+                var disqus_shortname = &#39;ccjeng&#39;;
+                var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
+                if (!disqus_blogger_current_url.length) {
+                    disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
+                }
+                var disqus_blogger_homepage_url = &quot;<data:blog.homepageUrl/>&quot;;
+                var disqus_blogger_canonical_homepage_url = &quot;<data:blog.canonicalHomepageUrl/>&quot;;
+            </script>
+            <b:if cond='data:blog.pageType == &quot;item&quot;'>
+                <style type='text/css'>
+                    #comments {display:none;}
+                </style>
+                <script type='text/javascript'>
+                    (function() {
+                        var bloggerjs = document.createElement(&#39;script&#39;);
+                        bloggerjs.type = &#39;text/javascript&#39;;
+                        bloggerjs.async = true;
+                        bloggerjs.src = &#39;//&#39;+disqus_shortname+&#39;.disqus.com/blogger_item.js&#39;;
+                        (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+                    })();
+                </script>
+            </b:if>
+                <style type='text/css'>
+                    .post-comment-link { visibility: hidden; }
+                </style>
+                <script type='text/javascript'>
+                (function() {
+                    var bloggerjs = document.createElement(&#39;script&#39;);
+                    bloggerjs.type = &#39;text/javascript&#39;;
+                    bloggerjs.async = true;
+                    bloggerjs.src = &#39;//&#39;+disqus_shortname+&#39;.disqus.com/blogger_index.js&#39;;
+                    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+                })();
+                </script>
+        </b:includable>
+  </b:widget>
 </b:section>
 </div>
 </div> <!-- /content section-inner -->
-  
+
 <div class='footernbt sectionnbt'>
 <div class='footer-innernbt section-innernbt'>
 
 <div class='footer-anbt widgetsnbt'>
 <b:section class='footersec' id='footersec1' preferred='yes'>
-  <b:widget id='PopularPosts1' locked='false' title='本月熱門文章' type='PopularPosts'>
+  <b:widget id='PopularPosts1' locked='false' title='本月熱門文章' type='PopularPosts' visible='true'>
     <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
   <div class='widget-content popular-posts'>
@@ -2780,7 +2819,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 
 <div class='footer-bnbt widgetsnbt'>
 <b:section class='footersec' id='footersec2' showaddelement='yes'>
-  <b:widget id='BlogArchive1' locked='false' title='歷史文章' type='BlogArchive'>
+  <b:widget id='BlogArchive1' locked='false' title='歷史文章' type='BlogArchive' visible='true'>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -2870,7 +2909,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
 
 <div class='footer-cnbt widgetsnbt'>
 <b:section class='footersec' id='footersec3' showaddelement='yes'>
-  <b:widget id='Label1' locked='false' title='文章分類' type='Label'>
+  <b:widget id='Label1' locked='false' title='文章分類' type='Label' visible='true'>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -2909,7 +2948,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='PageList1' locked='false' title='' type='PageList'>
+  <b:widget id='PageList1' locked='false' title='' type='PageList' visible='true'>
     <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
   <div class='widget-content'>
@@ -2940,7 +2979,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML1' locked='false' title='' type='HTML'>
+  <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -2971,7 +3010,7 @@ var randomRelatedIndex,showRelatedPost;(function(n,m,k){var d={widgetTitle:"<h4>
   <a href='https://github.com/ccjeng' rel='nofollow' target='_blank' title='Github'><i class='fa fa-github-square'/></a>
   <a href='http://instagram.com/ccjeng' rel='nofollow' target='_blank' title='Instagram'><i class='fa fa-instagram'/></a>
   <a href='https://share.readmoo.com/mooer/prvhovufn/bookshelf/ccjeng/total' rel='nofollow' target='_blank' title='Readmoo'><i class='fa fa-flickr'/></a>
-  <a href='http://feeds.feedburner.com/OneNode' rel='nofollow' target='_blank' title='RSS Feed'><i class='fa fa-rss-square'/></a>  
+  <a href='http://feeds.feedburner.com/OneNode' rel='nofollow' target='_blank' title='RSS Feed'><i class='fa fa-rss-square'/></a>
 </div>
 
 <p class='credits-leftnbt'>
@@ -2981,7 +3020,7 @@ Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();doc
 <!-- you should not edit or remove credits without our permission: newbloggerthemes.com -->
 Distributed By <a href='http://mybloggerthemes.com/' rel='dofollow' target='_blank' title='Free Blogger Templates'>My Blogger Themes</a> | Blogger Theme By <a href='http://newbloggerthemes.com/' target='_blank' title='NewBloggerThemes'>NewBloggerThemes</a> <a class='tothetopnbt' title='To the top'>Up &amp;uarr;</a>
 </p>
-    
+
 <div class='clearnbt'/>
 </div> <!-- /credits-inner -->
 </div> <!-- /credits -->
@@ -2990,16 +3029,16 @@ Distributed By <a href='http://mybloggerthemes.com/' rel='dofollow' target='_bla
 //<![CDATA[
 
 jQuery(document).ready(function($) {
-  
+
   // toggle blog-menu
-  $(".nav-togglenbt").on("click", function(){ 
+  $(".nav-togglenbt").on("click", function(){
     $(this).toggleClass("active");
     $(".navigationnbt").slideToggle(function (){
       $(".navigationnbt").css('overflow', 'visible');
     });
-  }); 
-  
-  // Smooth scroll to the top 
+  });
+
+  // Smooth scroll to the top
     $('.tothetopnbt').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 500);
         return false;
@@ -3022,7 +3061,7 @@ style = "text-align: center;",
 html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div><br/>";
 $target.before(html);
 })(jQuery);
- 
+
 (function($) {
 var ad_client = "ca-pub-6914084100751028",
 ad_slot = "6773969613",
