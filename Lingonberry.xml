@@ -5,8 +5,8 @@
 <meta content='text/html;charset=UTF-8' http-equiv='Content-type'/>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
 
-<meta content='一個分享技術心得、好用工具、閱讀筆記、旅行經歷的部落格' name='description'/>
-<meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development' name='keywords'/>
+<meta content='略懂工程師的學習筆記' name='description'/>
+<meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development Python Golang' name='keywords'/>
 <meta content='1q-5awxOKos7HaSa3tuRxOfJrbgqV7wmFaj-NnaIVsI' name='google-site-verification'/>
 <meta content='37A1C964DB8F38CA2505D785E33EA429' name='msvalidate.01'/>
 
@@ -1625,9 +1625,7 @@ function createSummaryAndThumb(pID){
 (function(a){a.fn.lazyload=function(b){var c={threshold:0,failurelimit:0,event:"scroll",effect:"show",container:window};if(b){a.extend(c,b)}var d=this;if("scroll"==c.event){a(c.container).bind("scroll",function(b){var e=0;d.each(function(){if(a.abovethetop(this,c)||a.leftofbegin(this,c)){}else if(!a.belowthefold(this,c)&&!a.rightoffold(this,c)){a(this).trigger("appear")}else{if(e++>c.failurelimit){return false}}});var f=a.grep(d,function(a){return!a.loaded});d=a(f)})}this.each(function(){var b=this;if(undefined==a(b).attr("original")){a(b).attr("original",a(b).attr("src"))}if("scroll"!=c.event||undefined==a(b).attr("src")||c.placeholder==a(b).attr("src")||a.abovethetop(b,c)||a.leftofbegin(b,c)||a.belowthefold(b,c)||a.rightoffold(b,c)){if(c.placeholder){a(b).attr("src",c.placeholder)}else{a(b).removeAttr("src")}b.loaded=false}else{b.loaded=true}a(b).one("appear",function(){if(!this.loaded){a("<img />").bind("load",function(){a(b).hide().attr("src",a(b).attr("original"))[c.effect](c.effectspeed);b.loaded=true}).attr("src",a(b).attr("original"))}});if("scroll"!=c.event){a(b).bind(c.event,function(c){if(!b.loaded){a(b).trigger("appear")}})}});a(c.container).trigger(c.event);return this};a.belowthefold=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).height()+a(window).scrollTop()}else{var d=a(c.container).offset().top+a(c.container).height()}return d<=a(b).offset().top-c.threshold};a.rightoffold=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).width()+a(window).scrollLeft()}else{var d=a(c.container).offset().left+a(c.container).width()}return d<=a(b).offset().left-c.threshold};a.abovethetop=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).scrollTop()}else{var d=a(c.container).offset().top}return d>=a(b).offset().top+c.threshold+a(b).height()};a.leftofbegin=function(b,c){if(c.container===undefined||c.container===window){var d=a(window).scrollLeft()}else{var d=a(c.container).offset().left}return d>=a(b).offset().left+c.threshold+a(b).width()};a.extend(a.expr[":"],{"below-the-fold":"$.belowthefold(a, {threshold : 0, container: window})","above-the-fold":"!$.belowthefold(a, {threshold : 0, container: window})","right-of-fold":"$.rightoffold(a, {threshold : 0, container: window})","left-of-fold":"!$.rightoffold(a, {threshold : 0, container: window})"})})(jQuery);$(function(){$("img").lazyload({placeholder:"http://i22.servimg.com/u/f22/15/42/72/40/grey10.gif",effect:"fadeIn",threshold:"-50"})})//]]></script>
 <!-- lazy load end www.bloggerspice.com -->
 <!--LazyLoad-->
-<!--
-<script src='https://apis.google.com/js/plusone.js' type='text/javascript'/>
--->
+
 </head>
 
 <body>
@@ -2310,16 +2308,12 @@ function createSummaryAndThumb(pID){
 <ul class='pbt-social-icons' id='social-post-un'>
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
   <span>
-  	<!--
-    <iframe allowTransparency='true' expr:src='&quot;https://www.facebook.com/plugins/like.php?href=&quot; + data:post.canonicalUrl + &quot;&amp;layout=button_count&amp;show_faces=false&amp;width=100&amp;action=like&amp;font=arial&amp;colorscheme=light&quot;' frameborder='0' scrolling='no' style='border:none; overflow:hidden; width:100px; height:20px;'/>
--->
+
     <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" expr:data-href='data:post.canonicalUrl'></div>
 	<div class="fb-share-button" data-layout="button_count" expr:data-href='data:post.canonicalUrl'></div>
 
   </span>
- <!-- <span>
-    <g:plusone data-annotation='inline' data-href='data:post.canonicalUrl' data-size='medium' data-width='300'/>
-  </span>-->
+
 </b:if>
 </ul>
 </div>
