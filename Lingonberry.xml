@@ -8,7 +8,6 @@
 <meta content='1q-5awxOKos7HaSa3tuRxOfJrbgqV7wmFaj-NnaIVsI' name='google-site-verification'/>
 <meta content='37A1C964DB8F38CA2505D785E33EA429' name='msvalidate.01'/>
 
-<!--<b:include data='blog' name='all-head-content'/>-->
 <link href='https://blog.ccjeng.com/favicon.ico' rel='icon' type='image/x-icon'/>
 <link expr:href='data:blog.url' rel='canonical'/>
 
@@ -2316,7 +2315,7 @@ function createSummaryAndThumb(pID){
   <span>
 
     <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" expr:data-href='data:post.canonicalUrl'></div>
-	<div class="fb-share-button" data-layout="button_count" expr:data-href='data:post.canonicalUrl'></div>
+  <div class="fb-share-button" data-layout="button_count" expr:data-href='data:post.canonicalUrl'></div>
 
   </span>
 
