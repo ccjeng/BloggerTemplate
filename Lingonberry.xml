@@ -4,25 +4,27 @@
 <head>
 <meta content='text/html;charset=UTF-8' http-equiv='Content-type'/>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
+<meta content='略懂工程師的學習筆記' name='description'/>
 <meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development Python Golang' name='keywords'/>
 <meta content='1q-5awxOKos7HaSa3tuRxOfJrbgqV7wmFaj-NnaIVsI' name='google-site-verification'/>
 <meta content='37A1C964DB8F38CA2505D785E33EA429' name='msvalidate.01'/>
 
+<!--<b:include data='blog' name='all-head-content'/>-->
 <link href='https://blog.ccjeng.com/favicon.ico' rel='icon' type='image/x-icon'/>
 <link expr:href='data:blog.url' rel='canonical'/>
 
-<link rel='alternate' type='application/atom+xml' expr:title='data:blog.title + &quot; - Atom&quot;' expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' />
-<link rel='alternate' type='application/rss+xml' expr:title='data:blog.title + &quot; - RSS&quot;' expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' />
-<link rel='openid.server' href='https://www.blogger.com/openid-server.g' />
-<link rel='openid.delegate' href='https://blog.ccjeng.com/' />
+<link expr:href='data:blog.homepageUrl + "feeds/posts/default"' expr:title='data:blog.title + " - Atom"' rel='alternate' type='application/atom+xml'/>
+<link expr:href='data:blog.homepageUrl + "feeds/posts/default?alt=rss"' expr:title='data:blog.title + " - RSS"' rel='alternate' type='application/rss+xml'/>
+<link href='https://www.blogger.com/openid-server.g' rel='openid.server'/>
+<link href='https://blog.ccjeng.com/' rel='openid.delegate'/>
 
 <link href='//fonts.googleapis.com/css?family=Raleway%3A600%2C500%2C400' media='all' rel='stylesheet' type='text/css'/>
 <link href='//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
 <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'/>
-<b:if cond='data:blog.pageType == &quot;index&quot;'>
+<b:if cond='data:blog.pageType == "index"'>
 <title>[ <data:blog.pageTitle/> ]</title>
 <b:else/>
-<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+<b:if cond='data:blog.pageType != "error_page"'>
 <title><data:blog.pageName/> - [<data:blog.title/>]</title>
 <b:else/>
 <title>404 ~ Page Not Found!</title>
@@ -1505,7 +1507,7 @@ function createSummaryAndThumb(pID){
     FB.init({
       appId      : '497828857040391',
       xfbml      : true,
-      version    : 'v2.4'
+      version    : 'v2.7'
     });
   };
 
@@ -1519,7 +1521,8 @@ function createSummaryAndThumb(pID){
 </script>
 
 
-<b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+
+<b:if cond='data:blog.pageType == "static_page"'>
 <style type='text/css'>
 .contentnbt:after,
 .contentnbt:before,
@@ -1558,7 +1561,7 @@ function createSummaryAndThumb(pID){
 </style>
 </b:if>
 
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:if cond='data:blog.pageType == "item"'>
 <style type='text/css'>
 .contentnbt:after,
 .contentnbt:before,
@@ -1602,7 +1605,7 @@ function createSummaryAndThumb(pID){
 <style>
  /*內文字型*/
   .post-body {
-    font-family: Arial, &quot;文泉驛正黑&quot;, &quot;WenQuanYi Zen Hei&quot;, &quot;儷黑 Pro&quot;, &quot;LiHei Pro&quot;, &quot;微軟正黑體&quot;, &quot;TW-Kai&quot;, &quot;BiauKai&quot;, &quot;Microsoft JhengHei&quot;, sans-serif;
+    font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "TW-Kai", "BiauKai", "Microsoft JhengHei", sans-serif;
     line-height: 1.8em;
     letter-spacing: 0.8px;
   }
@@ -1692,7 +1695,7 @@ function createSummaryAndThumb(pID){
 <b:section class='headersec' id='headersec' maxwidgets='1' showaddelement='no'>
   <b:widget id='Header1' locked='true' title='鍵盤自耕農 (標頭)' type='Header' version='1' visible='true'>
     <b:includable id='main'>
-    <h1 class='blog-titlenbt'><a expr:href='data:blog.homepageUrl'>{ <b:include name='title'/> }<br/><p><b:include name='description'/></p></a></h1>
+    <h1 class='blog-titlenbt'><a expr:href='data:blog.homepageUrl'>[ <b:include name='title'/> ]<br/><p><b:include name='description'/></p></a></h1>
     </b:includable>
     <b:includable id='description'><data:description/></b:includable>
     <b:includable id='title'><data:title/></b:includable>
@@ -1713,7 +1716,7 @@ function createSummaryAndThumb(pID){
 <b:section class='mainblogsec' id='mainblogsec' showaddelement='no'>
   <b:widget id='Blog1' locked='true' title='網誌文章' type='Blog' version='1' visible='true'>
     <b:includable id='main' var='top'>
-  <b:if cond='data:mobile == &quot;false&quot;'>
+  <b:if cond='data:mobile == "false"'>
 
     <!-- posts -->
     <div class='blog-posts hfeed'>
@@ -1723,29 +1726,29 @@ function createSummaryAndThumb(pID){
       <data:defaultAdStart/>
       <b:loop values='data:posts' var='post'>
         <b:if cond='data:post.isDateStart'>
-          <b:if cond='data:post.isFirstPost == &quot;false&quot;'>
+          <b:if cond='data:post.isFirstPost == "false"'>
             &lt;/div&gt;&lt;/div&gt;
           </b:if>
         </b:if>
         <b:if cond='data:post.isDateStart'>
-          &lt;div class=&quot;date-outer&quot;&gt;
+          &lt;div class="date-outer"&gt;
         </b:if>
         <b:if cond='data:post.dateHeader'>
           <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
         </b:if>
         <b:if cond='data:post.isDateStart'>
-          &lt;div class=&quot;date-posts&quot;&gt;
+          &lt;div class="date-posts"&gt;
         </b:if>
         <div class='post-outer'>
         <b:include data='post' name='post'/>
-        <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+        <b:if cond='data:blog.pageType == "static_page"'>
           <b:if cond='data:post.showThreadedComments'>
             <b:include data='post' name='threaded_comments'/>
           <b:else/>
             <b:include data='post' name='comments'/>
           </b:if>
         </b:if>
-        <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        <b:if cond='data:blog.pageType == "item"'>
           <b:if cond='data:post.showThreadedComments'>
             <b:include data='post' name='threaded_comments'/>
           <b:else/>
@@ -1772,7 +1775,7 @@ function createSummaryAndThumb(pID){
     </div>
 
 <div style='clear: both;'/>
-<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != "item"'>
 <!-- navigation -->
 <b:include name='nextprev'/>
 </b:if>
@@ -1783,7 +1786,7 @@ function createSummaryAndThumb(pID){
     <b:if cond='data:top.showStars'>
       <script src='//www.google.com/jsapi' type='text/javascript'/>
       <script type='text/javascript'>
-        google.load(&quot;annotations&quot;, &quot;1&quot;, {&quot;locale&quot;: &quot;<data:top.languageCode/>&quot;});
+        google.load("annotations", "1", {"locale": "<data:top.languageCode/>"});
         function initialize() {
           google.annotations.setApplicationId(<data:top.blogspotReviews/>);
           google.annotations.createAll();
@@ -1803,7 +1806,7 @@ function createSummaryAndThumb(pID){
 
 </b:includable>
     <b:includable id='backlinkDeleteIcon' var='backlink'>
-  <span expr:class='&quot;item-control &quot; + data:backlink.adminClass'>
+  <span expr:class='"item-control " + data:backlink.adminClass'>
     <a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'>
       <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
     </a>
@@ -1832,7 +1835,7 @@ function createSummaryAndThumb(pID){
     </dl>
   </b:if>
   <p class='comment-footer'>
-    <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &quot;_backlinks-create-link&quot;' target='_blank'><data:post.createLinkLabel/></a>
+    <a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + "_backlinks-create-link"' target='_blank'><data:post.createLinkLabel/></a>
   </p>
 </b:includable>
     <b:includable id='comment-form' var='post'>
@@ -1840,7 +1843,7 @@ function createSummaryAndThumb(pID){
     <a name='comment-form'/>
     <b:if cond='data:mobile'>
       <h4 id='comment-post-message'>
-        <a expr:id='data:widget.instanceId + &quot;_comment-editor-toggle-link&quot;' href='javascript:void(0)'><data:postCommentMsg/></a></h4>
+        <a expr:id='data:widget.instanceId + "_comment-editor-toggle-link"' href='javascript:void(0)'><data:postCommentMsg/></a></h4>
       <p><data:blogCommentMessage/></p>
       <data:blogTeamBlogMessage/>
       <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
@@ -1855,12 +1858,12 @@ function createSummaryAndThumb(pID){
     <data:post.friendConnectJs/>
     <data:post.cmtfpIframe/>
     <script type='text/javascript'>
-      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;, &#39;<data:post.communityId/>&#39;);
+      BLOG_CMT_createIframe('<data:post.appRpcRelayPath/>', '<data:post.communityId/>');
     </script>
   </div>
 </b:includable>
     <b:includable id='commentDeleteIcon' var='comment'>
-  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+  <span expr:class='"item-control " + data:comment.adminClass'>
     <b:if cond='data:showCmtPopup'>
       <div class='goog-toggle-button'>
         <div class='goog-inline-block comment-action-icon'/>
@@ -1919,10 +1922,10 @@ function createSummaryAndThumb(pID){
         </span>
       </b:if>
 
-      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+      <div expr:id='data:widget.instanceId + "_comments-block-wrapper"'>
         <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
           <b:loop values='data:post.comments' var='comment'>
-            <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
+            <dt expr:class='"comment-author " + data:comment.authorClass' expr:id='data:comment.anchorName'>
               <b:if cond='data:comment.favicon'>
                 <img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/>
               </b:if>
@@ -2001,7 +2004,7 @@ function createSummaryAndThumb(pID){
     </b:if>
 
     <div id='backlinks-container'>
-    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+    <div expr:id='data:widget.instanceId + "_backlinks-container"'>
        <b:if cond='data:post.showBacklinks'>
          <b:include data='post' name='backlinks'/>
        </b:if>
@@ -2010,7 +2013,7 @@ function createSummaryAndThumb(pID){
   </div>
 </b:includable>
     <b:includable id='feedLinks'>
-  <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
+  <b:if cond='data:blog.pageType != "item"'> <!-- Blog feed links -->
     <b:if cond='data:feedLinks'>
       <div class='blog-feeds'>
         <b:include data='feedLinks' name='feedLinksBody'/>
@@ -2043,7 +2046,7 @@ function createSummaryAndThumb(pID){
     <script expr:src='data:post.commentSrc' type='text/javascript'/>
     <div class='cmt_iframe_holder'/>
 
-    <b:if cond='data:post.embedCommentForm == &quot;false&quot;'>
+    <b:if cond='data:post.embedCommentForm == "false"'>
       <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
     </b:if>
   </b:if>
@@ -2082,7 +2085,7 @@ function createSummaryAndThumb(pID){
       </a>
 
       <div class='mobile-index-comment'>
-        <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+        <b:if cond='data:blog.pageType != "static_page"'>
           <b:if cond='data:post.allowComments'>
             <b:if cond='data:post.numComments != 0'>
               <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 1'>1 <data:top.commentLabel/><b:else/><data:post.numComments/> <data:top.commentLabelPlural/></b:if></a>
@@ -2099,7 +2102,7 @@ function createSummaryAndThumb(pID){
 
       <b:include data='top' name='status-message'/>
 
-      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <b:if cond='data:blog.pageType == "index"'>
         <b:loop values='data:posts' var='post'>
           <b:include data='post' name='mobile-index-post'/>
         </b:loop>
@@ -2116,13 +2119,13 @@ function createSummaryAndThumb(pID){
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
       <div class='mobile-link-button' id='blog-pager-newer-link'>
-      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&amp;lsaquo;</a>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + "_blog-pager-newer-link"' expr:title='data:newerPageTitle'>&amp;lsaquo;</a>
       </div>
     </b:if>
 
     <b:if cond='data:olderPageUrl'>
       <div class='mobile-link-button' id='blog-pager-older-link'>
-      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>&amp;rsaquo;</a>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + "_blog-pager-older-link"' expr:title='data:olderPageTitle'>&amp;rsaquo;</a>
       </div>
     </b:if>
 
@@ -2169,7 +2172,7 @@ function createSummaryAndThumb(pID){
             <div class='post-header-line-1'/>
           </div>
 
-          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id'>
+          <div class='post-body entry-content' expr:id='"post-body-" + data:post.id'>
             <data:post.body/>
 
             <div style='clear: both;'/> <!-- clear for photos floats -->
@@ -2201,8 +2204,8 @@ function createSummaryAndThumb(pID){
               </span>
 
               <span class='post-comment-link'>
-                <b:if cond='data:blog.pageType != &quot;item&quot;'>
-                  <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+                <b:if cond='data:blog.pageType != "item"'>
+                  <b:if cond='data:blog.pageType != "static_page"'>
                     <b:if cond='data:post.allowComments'>
                       <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><b:if cond='data:post.numComments == 1'>1 <data:top.commentLabel/><b:else/><data:post.numComments/> <data:top.commentLabelPlural/></b:if></a>
                     </b:if>
@@ -2225,14 +2228,14 @@ function createSummaryAndThumb(pID){
           </div>
         </div>
 
-        <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+        <b:if cond='data:blog.pageType == "static_page"'>
           <b:if cond='data:post.showThreadedComments'>
             <b:include data='post' name='threaded_comments'/>
           <b:else/>
             <b:include data='post' name='comments'/>
           </b:if>
         </b:if>
-        <b:if cond='data:blog.pageType == &quot;item&quot;'>
+        <b:if cond='data:blog.pageType == "item"'>
           <b:if cond='data:post.showThreadedComments'>
             <b:include data='post' name='threaded_comments'/>
           <b:else/>
@@ -2247,13 +2250,13 @@ function createSummaryAndThumb(pID){
   <div class='blog-pager' id='blog-pager'>
     <b:if cond='data:newerPageUrl'>
       <span id='blog-pager-newer-link'>
-      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + "_blog-pager-newer-link"' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
       </span>
     </b:if>
 
     <b:if cond='data:olderPageUrl'>
       <span id='blog-pager-older-link'>
-      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + "_blog-pager-older-link"' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
       </span>
     </b:if>
 
@@ -2293,7 +2296,7 @@ function createSummaryAndThumb(pID){
         </b:if>
      </b:if>
       </h2>
-<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<b:if cond='data:blog.pageType != "static_page"'>
 <div class='post-metanbt'>
 
 
@@ -2311,14 +2314,10 @@ function createSummaryAndThumb(pID){
 
 <div class='pbtsharethisbutt'>
 <ul class='pbt-social-icons' id='social-post-un'>
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:if cond='data:blog.pageType == "item"'>
   <span>
-
-    <div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" expr:data-href='data:post.canonicalUrl'></div>
-  <div class="fb-share-button" data-layout="button_count" expr:data-href='data:post.canonicalUrl'></div>
-
+  <div class='fb-like' data-action='like' data-layout='button_count' data-share='true' data-show-faces='true' expr:data-href='data:post.canonicalUrl'/>
   </span>
-
 </b:if>
 </ul>
 </div>
@@ -2328,20 +2327,20 @@ function createSummaryAndThumb(pID){
 
 <div class='post-header-line-1'/>
 
-<div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+<div class='post-body entry-content' expr:id='"post-body-" + data:post.id' itemprop='articleBody'>
 
-<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-<b:if cond='data:blog.pageType != &quot;item&quot;'>
-<div expr:id='&quot;summary&quot; + data:post.id'><data:post.body/></div>
-<script type='text/javascript'>createSummaryAndThumb(&quot;summary<data:post.id/>&quot;);</script>
+<b:if cond='data:blog.pageType != "static_page"'>
+<b:if cond='data:blog.pageType != "item"'>
+<div expr:id='"summary" + data:post.id'><data:post.body/></div>
+<script type='text/javascript'>createSummaryAndThumb("summary<data:post.id/>");</script>
 </b:if>
 </b:if>
-<b:if cond='data:blog.pageType == &quot;item&quot;'><data:post.body/></b:if>
+<b:if cond='data:blog.pageType == "item"'><data:post.body/></b:if>
 
-<b:if cond='data:blog.pageType == &quot;static_page&quot;'><data:post.body/></b:if>
+<b:if cond='data:blog.pageType == "static_page"'><data:post.body/></b:if>
 
-<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
-<b:if cond='data:blog.pageType != &quot;item&quot;'>
+<b:if cond='data:blog.pageType != "static_page"'>
+<b:if cond='data:blog.pageType != "item"'>
 <div style='float:right;padding-right:10px;margin-top:10px;'>
 <a class='morer' expr:href='data:post.url'>繼續閱讀</a>
 </div>
@@ -2352,15 +2351,15 @@ function createSummaryAndThumb(pID){
 </div>
 <div class='clearnbt'/>
 
-<b:if cond='data:blog.pageType != &quot;static_page&quot;'>
+<b:if cond='data:blog.pageType != "static_page"'>
 <b:if cond='data:post.labels'>
 <div class='post-cat-tagsnbt'>
-  <p class='post-categoriesnbt'>分類: <b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != &quot;true&quot;'>, </b:if></b:loop></p>
+  <p class='post-categoriesnbt'>分類: <b:loop values='data:post.labels' var='label'><a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='data:label.isLast != "true"'>, </b:if></b:loop></p>
 </div>
 </b:if>
 </b:if>
 
-      <b:if cond='data:blog.pageType == &quot;item&quot;'>
+      <b:if cond='data:blog.pageType == "item"'>
       <div class='post-iconspbt'>
       <span class='post-icons' style='padding-right:10px;'>
         <!-- email post links -->
@@ -2383,7 +2382,7 @@ function createSummaryAndThumb(pID){
     </div>
     </b:if>
 
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <b:if cond='data:blog.pageType == "item"'>
       <div class='post-location post-locationpbt'>
         <b:if cond='data:top.showLocation'>
           <b:if cond='data:post.location'>
@@ -2394,7 +2393,7 @@ function createSummaryAndThumb(pID){
       </div>
     </b:if>
 
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
+    <b:if cond='data:blog.pageType == "item"'>
       <b:if cond='data:post.authorAboutMe'>
         <div class='author-profile' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
           <b:if cond='data:post.authorPhoto.url'>
@@ -2420,7 +2419,7 @@ function createSummaryAndThumb(pID){
 </div>
 <div style='clear: both;'/>
 
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:if cond='data:blog.pageType == "item"'>
 <!-- navigation -->
 <b:include name='nextprev'/>
 </b:if>
@@ -2428,13 +2427,13 @@ function createSummaryAndThumb(pID){
 </b:includable>
     <b:includable id='postQuickEdit' var='post'>
   <b:if cond='data:post.editUrl'>
-    <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
+    <span expr:class='"item-control " + data:post.adminClass'>
       <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>Edit</a>
     </span>
   </b:if>
 </b:includable>
     <b:includable id='shareButtons' var='post'>
-  <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showOrkutButton'><a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + &quot;&amp;target=orkut&quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToOrkutMsg/></span></a></b:if><b:if cond='data:top.showDummy'><div class='goog-inline-block dummy-container'><data:post.dummyTag/></div></b:if>
+  <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + "&amp;target=email"' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + "&amp;target=blog"' expr:onclick='"window.open(this.href, \"_blank\", \"height=270,width=475\"); return false;"' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + "&amp;target=twitter"' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + "&amp;target=facebook"' expr:onclick='"window.open(this.href, \"_blank\", \"height=430,width=640\"); return false;"' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showOrkutButton'><a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + "&amp;target=orkut"' expr:title='data:top.shareToOrkutMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToOrkutMsg/></span></a></b:if><b:if cond='data:top.showDummy'><div class='goog-inline-block dummy-container'><data:post.dummyTag/></div></b:if>
 </b:includable>
     <b:includable id='status-message'>
   <b:if cond='data:navMessage'>
@@ -2468,7 +2467,7 @@ function createSummaryAndThumb(pID){
     <data:post.friendConnectJs/>
     <data:post.cmtfpIframe/>
     <script type='text/javascript'>
-      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;, &#39;<data:post.communityId/>&#39;);
+      BLOG_CMT_createIframe('<data:post.appRpcRelayPath/>', '<data:post.communityId/>');
     </script>
   </div>
 </b:includable>
@@ -2681,7 +2680,7 @@ function createSummaryAndThumb(pID){
     </b:if>
 
     <div id='backlinks-container'>
-    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+    <div expr:id='data:widget.instanceId + "_backlinks-container"'>
        <b:if cond='data:post.showBacklinks'>
          <b:include data='post' name='backlinks'/>
        </b:if>
@@ -2693,25 +2692,25 @@ function createSummaryAndThumb(pID){
   <b:widget id='HTML2' locked='false' title='Disqus' type='HTML' visible='true'>
     <b:includable id='main'>
             <script type='text/javascript'>
-                var disqus_shortname = &#39;ccjeng&#39;;
-                var disqus_blogger_current_url = &quot;<data:blog.canonicalUrl/>&quot;;
+                var disqus_shortname = 'ccjeng';
+                var disqus_blogger_current_url = "<data:blog.canonicalUrl/>";
                 if (!disqus_blogger_current_url.length) {
-                    disqus_blogger_current_url = &quot;<data:blog.url/>&quot;;
+                    disqus_blogger_current_url = "<data:blog.url/>";
                 }
-                var disqus_blogger_homepage_url = &quot;<data:blog.homepageUrl/>&quot;;
-                var disqus_blogger_canonical_homepage_url = &quot;<data:blog.canonicalHomepageUrl/>&quot;;
+                var disqus_blogger_homepage_url = "<data:blog.homepageUrl/>";
+                var disqus_blogger_canonical_homepage_url = "<data:blog.canonicalHomepageUrl/>";
             </script>
-            <b:if cond='data:blog.pageType == &quot;item&quot;'>
+            <b:if cond='data:blog.pageType == "item"'>
                 <style type='text/css'>
                     #comments {display:none;}
                 </style>
                 <script type='text/javascript'>
                     (function() {
-                        var bloggerjs = document.createElement(&#39;script&#39;);
-                        bloggerjs.type = &#39;text/javascript&#39;;
+                        var bloggerjs = document.createElement('script');
+                        bloggerjs.type = 'text/javascript';
                         bloggerjs.async = true;
-                        bloggerjs.src = &#39;//&#39;+disqus_shortname+&#39;.disqus.com/blogger_item.js&#39;;
-                        (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+                        bloggerjs.src = '//'+disqus_shortname+'.disqus.com/blogger_item.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bloggerjs);
                     })();
                 </script>
             </b:if>
@@ -2720,11 +2719,11 @@ function createSummaryAndThumb(pID){
                 </style>
                 <script type='text/javascript'>
                 (function() {
-                    var bloggerjs = document.createElement(&#39;script&#39;);
-                    bloggerjs.type = &#39;text/javascript&#39;;
+                    var bloggerjs = document.createElement('script');
+                    bloggerjs.type = 'text/javascript';
                     bloggerjs.async = true;
-                    bloggerjs.src = &#39;//&#39;+disqus_shortname+&#39;.disqus.com/blogger_index.js&#39;;
-                    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(bloggerjs);
+                    bloggerjs.src = '//'+disqus_shortname+'.disqus.com/blogger_index.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bloggerjs);
                 })();
                 </script>
         </b:includable>
@@ -2745,8 +2744,8 @@ function createSummaryAndThumb(pID){
     <ul>
       <b:loop values='data:posts' var='post'>
       <li>
-        <b:if cond='data:showThumbnails == &quot;false&quot;'>
-          <b:if cond='data:showSnippets == &quot;false&quot;'>
+        <b:if cond='data:showThumbnails == "false"'>
+          <b:if cond='data:showSnippets == "false"'>
             <!-- (1) No snippet/thumbnail -->
             <a expr:href='data:post.href'><data:post.title/></a>
           <b:else/>
@@ -2755,7 +2754,7 @@ function createSummaryAndThumb(pID){
             <div class='item-snippet'><data:post.snippet/></div>
           </b:if>
         <b:else/>
-          <b:if cond='data:showSnippets == &quot;false&quot;'>
+          <b:if cond='data:showSnippets == "false"'>
             <!-- (3) Show only thumbnails -->
             <div class='item-thumbnail-only'>
               <b:if cond='data:post.thumbnail'>
@@ -2805,14 +2804,14 @@ function createSummaryAndThumb(pID){
   </b:if>
   <div class='widget-content'>
   <div id='ArchiveList'>
-  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
-    <b:if cond='data:style == &quot;HIERARCHY&quot;'>
+  <div expr:id='data:widget.instanceId + "_ArchiveList"'>
+    <b:if cond='data:style == "HIERARCHY"'>
      <b:include data='data' name='interval'/>
     </b:if>
-    <b:if cond='data:style == &quot;FLAT&quot;'>
+    <b:if cond='data:style == "FLAT"'>
       <b:include data='data' name='flat'/>
     </b:if>
-    <b:if cond='data:style == &quot;MENU&quot;'>
+    <b:if cond='data:style == "MENU"'>
       <b:include data='data' name='menu'/>
     </b:if>
   </div>
@@ -2832,7 +2831,7 @@ function createSummaryAndThumb(pID){
     <b:includable id='interval' var='intervalData'>
   <b:loop values='data:intervalData' var='i'>
       <ul class='hierarchy'>
-        <li expr:class='&quot;archivedate &quot; + data:i.expclass'>
+        <li expr:class='"archivedate " + data:i.expclass'>
           <b:include data='i' name='toggle'/>
           <a class='post-count-link' expr:href='data:i.url'><data:i.name/></a>
             <span class='post-count' dir='ltr'>(<data:i.post-count/>)</span>
@@ -2847,7 +2846,7 @@ function createSummaryAndThumb(pID){
   </b:loop>
 </b:includable>
     <b:includable id='menu' var='data'>
-  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+  <select expr:id='data:widget.instanceId + "_ArchiveMenu"'>
     <option value=''><data:title/></option>
     <b:loop values='data:data' var='i'>
       <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
@@ -2863,14 +2862,14 @@ function createSummaryAndThumb(pID){
 </b:includable>
     <b:includable id='toggle' var='interval'>
   <b:if cond='data:interval.toggleId'>
-  <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+  <b:if cond='data:interval.expclass == "expanded"'>
     <a class='toggle' href='javascript:void(0)'>
       <span class='zippy toggle-open'>&#9660;&#160;</span>
     </a>
   <b:else/>
     <a class='toggle' href='javascript:void(0)'>
       <span class='zippy'>
-        <b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
+        <b:if cond='data:blog.languageDirection == "rtl"'>
           &#9668;&#160;
         <b:else/>
           &#9658;&#160;
@@ -2893,8 +2892,8 @@ function createSummaryAndThumb(pID){
   <b:if cond='data:title'>
     <h2><data:title/></h2>
   </b:if>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
+  <div expr:class='"widget-content " + data:display + "-label-widget-content"'>
+    <b:if cond='data:display == "list"'>
       <ul>
       <b:loop values='data:labels' var='label'>
         <li>
@@ -2911,7 +2910,7 @@ function createSummaryAndThumb(pID){
       </ul>
     <b:else/>
       <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+        <span expr:class='"label-size label-size-" + data:label.cssSize'>
           <b:if cond='data:blog.url == data:label.url'>
             <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
           <b:else/>
@@ -2932,7 +2931,7 @@ function createSummaryAndThumb(pID){
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
   <div class='widget-content'>
     <b:if cond='data:mobile'>
-      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
+      <select expr:id='data:widget.instanceId + "_select"'>
         <b:loop values='data:links' var='link'>
           <b:if cond='data:link.isCurrentPage'>
             <option expr:value='data:link.href' selected='selected'><data:link.title/></option>
@@ -2961,7 +2960,7 @@ function createSummaryAndThumb(pID){
   <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
+  <b:if cond='data:title != ""'>
     <h2 class='title'><data:title/></h2>
   </b:if>
   <div class='widget-content'>
@@ -3028,7 +3027,7 @@ jQuery(document).ready(function($) {
 //]]>
 </script>
 <!-- Adsense 安裝懶人包 start -->
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
+<b:if cond='data:blog.pageType == "item"'>
 <script>
 //<![CDATA[
 /* 文章標題之前 */
@@ -3046,7 +3045,7 @@ var ad_client = "ca-pub-6914084100751028",
 ad_slot = "6773969613",
 $target = $(".post-body"),
 style = "text-align: center;",
-html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+html = "<br/><br/><div class='fb-like' data-action='like' data-layout='button_count' data-share='true' data-show-faces='true' expr:data-href='data:post.canonicalUrl'/><br/><br/><br/><div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
 $target.after(html);
 })(jQuery);
 
