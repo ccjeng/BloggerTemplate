@@ -15,13 +15,14 @@
 <meta expr:content='data:blog.metaDescription' itemprop='description' name='twitter:description' property='og:description'/>
 <meta content='@ccjeng' name='twitter:site'/>
 <meta content='@ccjeng' name='twitter:creator'/>
-  <meta content='497828857040391' property='fb:app_id'/>
+<meta content='497828857040391' property='fb:app_id'/>
+<meta content='1111779872214237'property='fb:admins' />
 
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
     <meta content='blog' property='og:type'/>
     <meta expr:content='data:blog.title + &quot; | Keboard Farmer&quot;' itemprop='name' name='twitter:title' property='og:title'/>
     <meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development Python Golang' itemprop='keywords'/>
-    <!--<meta property='og:image' itemprop='image' name='twitter:image:src'content='https://ccjeng.com/img/avatar.png'/>-->
+    <meta content='https://ccjeng.com/img/avatar.png' property='og:image' itemprop='image' name='twitter:image:src'/>
     <meta content='summary_large_image' name='twitter:card'/>
   <b:else/>
     <meta content='article' property='og:type'/>
@@ -31,7 +32,7 @@
       <b:if cond='data:blog.postImageUrl'>
       <meta expr:content='data:blog.postImageUrl' itemprop='image' name='twitter:image:src' property='og:image'/>
       <b:else/>
-      <meta content='https://ccjeng.com/img/default1.png' itemprop='image' name='twitter:image:src' property='og:image'/>
+      <meta content='https://ccjeng.com/img/icon.png' itemprop='image' name='twitter:image:src' property='og:image'/>
       </b:if>
   </b:if>
 <!-- Facebook og 與 Google meta 設定 end -->
