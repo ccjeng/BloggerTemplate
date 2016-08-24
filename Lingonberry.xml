@@ -16,13 +16,13 @@
 <meta content='@ccjeng' name='twitter:site'/>
 <meta content='@ccjeng' name='twitter:creator'/>
 <meta content='497828857040391' property='fb:app_id'/>
-<meta content='1111779872214237'property='fb:admins' />
+<meta content='1111779872214237' property='fb:admins'/>
 
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
     <meta content='blog' property='og:type'/>
     <meta expr:content='data:blog.title + &quot; | Keboard Farmer&quot;' itemprop='name' name='twitter:title' property='og:title'/>
     <meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development Python Golang' itemprop='keywords'/>
-    <meta content='https://ccjeng.com/img/avatar.png' property='og:image' itemprop='image' name='twitter:image:src'/>
+    <meta content='https://ccjeng.com/img/avatar.png' itemprop='image' name='twitter:image:src' property='og:image'/>
     <meta content='summary_large_image' name='twitter:card'/>
   <b:else/>
     <meta content='article' property='og:type'/>
@@ -1670,8 +1670,14 @@ function createSummaryAndThumb(pID){
 <ul class='blog-menunbt'>
 
 <li><a expr:href='data:blog.homepageUrl'>首頁</a></li>
-<li><a href='https://feeds.feedburner.com/OneNode' target='_blank'>RSS Feed</a></li>
-<li><a href='#'>About</a>
+  <li><a href='https://feeds.feedburner.com/OneNode' target='_blank'>訂閱</a></li>
+<li><a href='#'>社群專頁</a>
+  <ul class='sub-menu'>
+      <li><a href='https://www.facebook.com/KeyboardFarmer/' target='_blank'>Facebook</a></li>
+      <li><a href='https://plus.google.com/114684967375647381927' target='_blank'>Google+</a></li>
+  </ul>
+</li>
+<li><a href='#'>關於</a>
   <ul class='sub-menu'>
       <li><a href='https://ccjeng.com' target='_blank'>Profile</a></li>
       <li><a href='https://github.com/ccjeng' target='_blank'>GitHub</a></li>
