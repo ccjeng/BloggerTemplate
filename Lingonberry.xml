@@ -1670,7 +1670,7 @@ function createSummaryAndThumb(pID){
 <ul class='blog-menunbt'>
 
 <li><a expr:href='data:blog.homepageUrl'>首頁</a></li>
-  <li><a href='https://feeds.feedburner.com/OneNode' target='_blank'>訂閱</a></li>
+  <li><a href='http://feeds.feedburner.com/KeyboardFarmer' target='_blank'>訂閱</a></li>
 <li><a href='#'>社群專頁</a>
   <ul class='sub-menu'>
       <li><a href='https://www.facebook.com/KeyboardFarmer/' target='_blank'>Facebook</a></li>
@@ -3059,7 +3059,7 @@ jQuery(document).ready(function($) {
 
 //]]>
 </script>
-<!-- Adsense 安裝懶人包 start -->
+<!-- Adsense start -->
 <b:if cond='data:blog.pageType == &quot;item&quot;'>
 <script>
 //<![CDATA[
@@ -3086,7 +3086,7 @@ $target.after(html);
 </script>
 
 </b:if>
-<!-- Adsense 安裝懶人包 end, Designed by WFU BLOG -->
+<!-- Adsense end -->
 
 </body>
 </html>
