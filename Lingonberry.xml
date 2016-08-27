@@ -20,7 +20,7 @@
 
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
     <meta content='blog' property='og:type'/>
-    <meta expr:content='data:blog.title + &quot; | Keboard Farmer&quot;' itemprop='name' name='twitter:title' property='og:title'/>
+    <meta expr:content='data:blog.title + &quot; | KeboardFarmer&quot;' itemprop='name' name='twitter:title' property='og:title'/>
     <meta content='軟體開發 專案管理 技術分享 閱讀 旅行 Android DevOps JavaScript 網頁開發 Web Development Python Golang' itemprop='keywords'/>
     <meta content='https://ccjeng.com/img/avatar.png' itemprop='image' name='twitter:image:src' property='og:image'/>
     <meta content='summary_large_image' name='twitter:card'/>
@@ -2332,7 +2332,6 @@ function createSummaryAndThumb(pID){
 <b:if cond='data:blog.pageType != &quot;static_page&quot;'>
 <div class='post-metanbt'>
 
-
 <b:if cond='data:top.showTimestamp'><b:if cond='data:post.url'><meta expr:content='data:post.canonicalUrl' itemprop='url'/><span class='meta_date'><a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><span class='published updated' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></span></a></span></b:if><span class='date-sepnbt'> / </span></b:if>
 
 
@@ -2920,6 +2919,19 @@ function createSummaryAndThumb(pID){
 
 <div class='footer-cnbt widgetsnbt'>
 <b:section class='footersec' id='footersec3' showaddelement='yes'>
+  <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
   <b:widget id='Label1' locked='false' title='文章分類' type='Label' visible='true'>
     <b:includable id='main'>
   <b:if cond='data:title'>
@@ -2990,19 +3002,6 @@ function createSummaryAndThumb(pID){
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
 </b:section>
 <div class='clearnbt'/>
 </div>
@@ -3069,7 +3068,7 @@ var ad_client = "ca-pub-6914084100751028",
 ad_slot = "8045553215",
 $target = $(".post-title"),
 style = "text-align: center;",
-html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div><br/>";
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div><br/><div class='fb-page' data-href='https://www.facebook.com/KeyboardFarmer' data-small-header='true' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='false'><blockquote cite='https://www.facebook.com/KeyboardFarmer' class='fb-xfbml-parse-ignore'><a href='https://www.facebook.com/KeyboardFarmer'>鍵盤自耕農</a></blockquote></div><br/><br/>";
 $target.before(html);
 })(jQuery);
 
