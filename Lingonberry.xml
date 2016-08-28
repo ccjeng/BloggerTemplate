@@ -3068,7 +3068,7 @@ var ad_client = "ca-pub-6914084100751028",
 ad_slot = "8045553215",
 $target = $(".post-title"),
 style = "text-align: center;",
-html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div><br/><div class='fb-page' data-href='https://www.facebook.com/KeyboardFarmer' data-small-header='true' data-adapt-container-width='true' data-hide-cover='false' data-show-facepile='false'><blockquote cite='https://www.facebook.com/KeyboardFarmer' class='fb-xfbml-parse-ignore'><a href='https://www.facebook.com/KeyboardFarmer'>鍵盤自耕農</a></blockquote></div><br/><br/>";
+html = "<div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div><br/>";
 $target.before(html);
 })(jQuery);
 
@@ -3077,7 +3077,7 @@ var ad_client = "ca-pub-6914084100751028",
 ad_slot = "6773969613",
 $target = $(".post-body"),
 style = "text-align: center;",
-html = "<br/><br/><div class='fb-like' data-action='like' data-layout='button_count' data-share='true' data-show-faces='true' expr:data-href='data:post.canonicalUrl'/><br/><br/><br/><div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
+html = "<br/><a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'><img alt='創用 CC 授權條款' style='border-width:0' src='https://i.creativecommons.org/l/by-sa/4.0/88x31.png' /></a> <small>本著作係採用<a rel='license' href='http://creativecommons.org/licenses/by-sa/4.0/'>創用 CC 姓名標示-相同方式分享 4.0 國際 授權條款</a>授權.</small><br/><div class='fb-like' data-action='like' data-layout='button_count' data-share='true' data-show-faces='true' expr:data-href='data:post.canonicalUrl'/><br/><br/><br/><div style='" + style + "'><ins class='adsbygoogle' style='display:block' data-ad-format='auto' data-ad-client='" + ad_client + "' data-ad-slot='" + ad_slot + "'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></div>";
 $target.after(html);
 })(jQuery);
 
