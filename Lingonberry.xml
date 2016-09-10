@@ -703,7 +703,7 @@ em, q {  font-style: italic;  }
 abbr, acronym { cursor: help; }
 
 code, kbd, pre {
-  font-size: 0.65em;
+  font-size: 0.80em;
 }
 
 .post-body .highlight {
