@@ -1677,15 +1677,25 @@ function createSummaryAndThumb(pID){
         <li><a href='https://play.google.com/store/apps/details?id=com.oddsoft.tpetrash2' target='_blank'>台北倒垃圾</a></li>
         <li><a href='https://play.google.com/store/apps/details?id=com.ccjeng.tptrashcan' target='_blank'>台北丟垃圾</a></li>
         <li><a href='https://play.google.com/store/apps/details?id=com.ccjeng.news' target='_blank'>華文News</a></li>
-        <li><a href='https://play.google.com/store/apps/details?id=com.ccjeng.stock' target='_blank'>US Stocks</a></li>
+        <li><a href='https://play.google.com/store/apps/details?id=com.ccjeng.weather' target='_blank'>Weather+</a></li>
+        <li><a href='https://github.com/ccjeng/US-Stocks' target='_blank'>US Stocks</a></li>
+        <li><a href='https://github.com/ccjeng/iWish-AAC' target='_blank'>iWish AAC</a></li>
+
+        
       </ul>
     </li>
+     <li><a href='#'>iOS</a>
+      <ul class='sub-menu'>
+         <li><a href='https://github.com/ccjeng/iWishSwift-AAC' target='_blank'>iWish AAC for iPad</a></li>
+      </ul>
+    </li>   
     <li><a href='#'>Web</a>
         <ul class='sub-menu'>
           <li><a href='http://shorten.ccjeng.com' target='_blank'>Shorten Me!</a></li>
           <li><a href='http://geocoder.ccjeng.com/' target='_blank'>地址經緯度批次轉換</a></li>
-          <li><a href='http://taipeidisaster.ccjeng.com/' target='_blank'>台北市災害動態資訊</a></li>
           <li><a href='https://bin.ccjeng.com/' target='_blank'>台北丟垃圾 (網頁版)</a></li>
+          <li><a href='https://coin.ccjeng.com/' target='_blank'>錢幣金額計算教學</a></li>
+          <li><a href='http://angelnumber.carissalove.com/' target='_blank'>天使數字</a></li>          
         </ul>
     </li>
     <li><a href='#'>其他</a>
@@ -1709,7 +1719,7 @@ function createSummaryAndThumb(pID){
 <div class='header-innernbt section-innernbt'>
 <a class='logonbt noimgnbt' expr:href='data:blog.homepageUrl'/>
 <b:section class='headersec' id='headersec' maxwidgets='1' showaddelement='no'>
-  <b:widget id='Header1' locked='true' title='鍵盤自耕農 (標頭)' type='Header' version='1' visible='true'>
+  <b:widget id='Header1' locked='true' title='鍵盤自耕農 (標頭)' type='Header' version='1'>
     <b:includable id='main'>
     <h1 class='blog-titlenbt'><a expr:href='data:blog.homepageUrl'>[ <b:include name='title'/> ]<br/><p><b:include name='description'/></p></a></h1>
     </b:includable>
@@ -1730,7 +1740,7 @@ function createSummaryAndThumb(pID){
 <div class='contentnbt section-innernbt'>
 <div class='postsnbt'>
 <b:section class='mainblogsec' id='mainblogsec' showaddelement='no'>
-  <b:widget id='Blog1' locked='true' title='網誌文章' type='Blog' version='1' visible='true'>
+  <b:widget id='Blog1' locked='true' title='網誌文章' type='Blog' version='1'>
     <b:includable id='main' var='top'>
   <b:if cond='data:mobile == &quot;false&quot;'>
 
@@ -2704,7 +2714,7 @@ function createSummaryAndThumb(pID){
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='HTML2' locked='false' title='Disqus' type='HTML' visible='true'>
+  <b:widget id='HTML2' locked='false' title='Disqus' type='HTML'>
     <b:includable id='main'>
             <script type='text/javascript'>
                 var disqus_shortname = &#39;ccjeng&#39;;
@@ -2752,7 +2762,7 @@ function createSummaryAndThumb(pID){
 
 <div class='footer-anbt widgetsnbt'>
 <b:section class='footersec' id='footersec1' preferred='yes'>
-  <b:widget id='PopularPosts1' locked='false' title='本月熱門文章' type='PopularPosts' visible='true'>
+  <b:widget id='PopularPosts1' locked='false' title='本月熱門文章' type='PopularPosts'>
     <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
   <div class='widget-content popular-posts'>
@@ -2812,7 +2822,7 @@ function createSummaryAndThumb(pID){
 
 <div class='footer-bnbt widgetsnbt'>
 <b:section class='footersec' id='footersec2' showaddelement='yes'>
-  <b:widget id='BlogArchive1' locked='false' title='歷史文章' type='BlogArchive' visible='true'>
+  <b:widget id='BlogArchive1' locked='false' title='歷史文章' type='BlogArchive'>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -2902,7 +2912,7 @@ function createSummaryAndThumb(pID){
 
 <div class='footer-cnbt widgetsnbt'>
 <b:section class='footersec' id='footersec3' showaddelement='yes'>
-  <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
+  <b:widget id='HTML1' locked='false' title='' type='HTML'>
     <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -2915,7 +2925,7 @@ function createSummaryAndThumb(pID){
   <b:include name='quickedit'/>
 </b:includable>
   </b:widget>
-  <b:widget id='Label1' locked='false' title='文章分類' type='Label' visible='true'>
+  <b:widget id='Label1' locked='false' title='文章分類' type='Label'>
     <b:includable id='main'>
   <b:if cond='data:title'>
     <h2><data:title/></h2>
@@ -2954,7 +2964,7 @@ function createSummaryAndThumb(pID){
   </div>
 </b:includable>
   </b:widget>
-  <b:widget id='PageList1' locked='false' title='' type='PageList' visible='true'>
+  <b:widget id='PageList1' locked='false' title='' type='PageList'>
     <b:includable id='main'>
   <b:if cond='data:title'><h2><data:title/></h2></b:if>
   <div class='widget-content'>
