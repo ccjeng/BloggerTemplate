@@ -1620,23 +1620,26 @@ function createSummaryAndThumb(pID){
 </style>
 
 <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
-<!-- Syntax Highlighter Additions START -->
-<link href='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/styles/shCore.min.css' rel='stylesheet' type='text/css'/>
-<link href='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/styles/shThemeDefault.min.css' rel='stylesheet' type='text/css'/>
-<script src='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.js' type='text/javascript'/>
-<script src='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJava.min.js' type='text/javascript'/>
-<script src='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js' type='text/javascript'/>
-<script src='//cdn.rawgit.com/Polymer/cdnjs/master/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushXml.min.js' type='text/javascript'/>
-<script defer='defer' src='//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'/>
 
-<!--<script defer='defer' src='//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css'/>-->
+<link id="prettify_css" href="//jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night-eighties.min.css" type="text/css" rel="stylesheet"/>
 
+<script type="text/javascript" src="//cdn.rawgit.com/google/code-prettify/master/loader/prettify.js"></script>
+<script type="text/javascript">
+			function wpCodePrettifyOnLoad(func){
+				var wpCodePrettifyOldOnLoad = window.onload;
+				if (typeof window.onload != 'function') {
+					window.onload = func
+				} else {
+					window.onload = function () {
+						wpCodePrettifyOldOnLoad();
+						func()
+					}
+				}
+			}
 
-<script language='javascript' type='text/javascript'>
-  SyntaxHighlighter.config.bloggerMode = true;
-  SyntaxHighlighter.all();
-</script>
-<!--Syntax Highlighter Additions END -->
+			wpCodePrettifyOnLoad(function(){prettyPrint();});
+		</script>
+
 
 <!--LazyLoad-->
 <!-- lazy load start www.bloggerspice.com -->
@@ -2862,6 +2865,48 @@ function createSummaryAndThumb(pID){
 
 <div class='footer-bnbt widgetsnbt'>
 <b:section class='footersec' id='footersec2' showaddelement='yes'>
+  <b:widget id='HTML3' locked='false' title='' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;a class=&quot;github-button&quot; href=&quot;https://github.com/ccjeng&quot; data-style=&quot;mega&quot; data-count-href=&quot;/ccjeng/followers&quot; data-count-api=&quot;/users/ccjeng#followers&quot; data-count-aria-label=&quot;# followers on GitHub&quot; aria-label=&quot;Follow @ccjeng on GitHub&quot;&gt;Follow @ccjeng&lt;/a&gt;
+
+
+&lt;script async defer src=&quot;https://buttons.github.io/buttons.js&quot;&gt;&lt;/script&gt;
+
+
+&lt;a class=&quot;twitter-follow-button&quot;
+  href=&quot;https://twitter.com/ccjeng&quot;
+  data-size=&quot;large&quot;&gt;
+Follow @ccjeng&lt;/a&gt;
+
+&lt;script&gt;window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = &quot;https://platform.twitter.com/widgets.js&quot;;
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, &quot;script&quot;, &quot;twitter-wjs&quot;));&lt;/script&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
   <b:widget id='BlogArchive1' locked='false' title='歷史文章' type='BlogArchive'>
     <b:widget-settings>
       <b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
@@ -3029,7 +3074,7 @@ function createSummaryAndThumb(pID){
   </b:widget>
   <b:widget id='PageList1' locked='false' title='' type='PageList'>
     <b:widget-settings>
-      <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'http://onenode.blogspot.com/', 'title': '回到首頁', 'position': 0}}]]></b:widget-setting>
+      <b:widget-setting name='pageListJson'><![CDATA[{'link0': {'href': 'https://ccjeng.com', 'title': 'About', 'position': 0}, 'home': {'href': 'http://blog.ccjeng.com/', 'title': '回到首頁', 'position': 1}}]]></b:widget-setting>
       <b:widget-setting name='homeTitle'>回到首頁</b:widget-setting>
     </b:widget-settings>
     <b:includable id='main'>
