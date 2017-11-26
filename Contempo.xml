@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='indie.xml' b:templateVersion='1.1.1' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
-    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
 	<meta content='text/html;charset=UTF-8' http-equiv='Content-type'/>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
 	<meta content='略懂工程師的學習筆記' name='description'/>
@@ -17,7 +17,8 @@
 <meta content='@ccjeng' name='twitter:site'/>
 <meta content='@ccjeng' name='twitter:creator'/>
 <meta content='497828857040391' property='fb:app_id'/>
-<meta content='1111779872214237' property='fb:admins'/>
+<meta content='640123065' property='fb:admins'/>
+<meta expr:content='data:blog.canonicalUrl' property='og:url'/>
 
   <b:if cond='data:blog.pageType == &quot;index&quot;'>
     <meta content='blog' property='og:type'/>
@@ -59,7 +60,7 @@
 
 <!-- Variable definitions -->
 
-<Variable name="keycolor" description="Main color" type="color" default="#2196f3"  value="#000002"/>
+<Variable name="keycolor" description="Main color" type="color" default="#2196f3"  value="#2196f3"/>
 <Variable name="startSide" description="Start side in blog language" type="automatic" default="left" hideEditor="true" />
 <Variable name="endSide" description="End side in blog language" type="automatic" default="right" hideEditor="true" />
 
@@ -69,7 +70,7 @@
       default="$(robotoNormal15)"  value="15px Roboto, sans-serif"/>
   <Variable name="body.text.color" description="Color"
       type="color"
-      default="#757575"  value="#4e4e4e"/>
+      default="#757575"  value="#757575"/>
 </Group>
 
 <Group description="Backgrounds">
@@ -81,10 +82,10 @@
   <Variable name="body.background" description="Background"
       color="$(body.background.color)"
       type="background"
-      default="$(color) none repeat scroll top left"  value="#000002 url(//themes.googleusercontent.com/image?id=1nCEFJnjbEM1e6XClO-Dh7L-U6FJQuxivkV20FpXYmkNyRA0vQIZPfjuIp6hcROwwArvQ) no-repeat fixed top center /* Credit: sololos (http://www.istockphoto.com/file_closeup.php?id=5613056&amp;platform=blogger) */"/>
+      default="$(color) none repeat scroll top left"  value="#abcd6f url(//themes.googleusercontent.com/image?id=1Chj_ye7BsJe4QabnXKJQuhK_LeNly4bySlgKgmDjAgChHUvZW1v1C0LKoAFBqdYE6g6L) no-repeat fixed top center /* Credit: TommyIX (http://www.istockphoto.com/file_closeup.php?id=11751797&amp;platform=blogger) */"/>
   <Variable name="body.background.color" description="Body background color"
       type="color"
-      default="#eee"  value="#e7e7e7"/>
+      default="#eee"  value="#eeeeee"/>
   <Variable name="posts.background.color" description="Post background color"
       type="color"
       default="#fff"  value="#ffffff"/>
@@ -98,7 +99,7 @@
 <Group description="Links">
   <Variable name="body.link.color" description="Link color"
       type="color"
-      default="#2196f3"  value="#0b0bd9"/>
+      default="#2196f3"  value="#2196f3"/>
   <Variable name="body.link.visited.color" description="Visited link color"
       type="color"
       default="$(body.link.color)"  value="#2196f3"/>
@@ -128,7 +129,7 @@
       default="700 normal $(size) $(family)"  value="700 normal $(size) $(family)"/>
   <Variable name="tabs.color" description="Text color"
       type="color"
-      default="#ccc"  value="#c2c2c2"/>
+      default="#ccc"  value="#cccccc"/>
   <Variable name="tabs.selected.color" description="Selected color"
       type="color"
       default="#fff"  value="#ffffff"/>
@@ -146,7 +147,7 @@
 <Group description="Posts" selector="div.widget.Blog">
   <Variable name="posts.title.color" description="Post title color"
       type="color"
-      default="#212121"  value="#000000"/>
+      default="#212121"  value="#212121"/>
   <Variable name="posts.title.font" description="Post title font"
       type="font"
       default="$(robotoBold22)"  value="bold 22px Roboto, sans-serif"/>
@@ -167,11 +168,11 @@
       default="$(robotoLightItalic15)"  value="italic 300 15px Roboto, sans-serif"/>
   <Variable name="blockquote.color" description="Blockquote color"
       type="color"
-      default="#444"  value="#000000"/>
+      default="#444"  value="#444444"/>
   <Variable name="posts.icons.color"
       description="Post icons color"
       type="color"
-      default="#707070"  value="#414141"/>
+      default="#707070"  value="#707070"/>
 </Group>
 
 <Group description="Search">
@@ -246,7 +247,7 @@
   <Variable name="sidebar.backgroundColorTopHD"
       description="Background color (Top) - HD"
       type="color"
-      default="rgba(255, 255, 255, 1)"  value="#f0f0f0"/>
+      default="rgba(255, 255, 255, 1)"  value="#f7f7f7"/>
   <Variable name="sidebar.backgroundColorBottom"
       description="Background color (Bottom)"
       type="color"
@@ -254,15 +255,15 @@
   <Variable name="sidebar.separator.color"
       description="Separator color"
       type="color"
-      default="#ccc"  value="#c2c2c2"/>
+      default="#ccc"  value="#cccccc"/>
   <Variable name="widget.title.color"
       description="Gadget title color"
       type="color"
-      default="#212121"  value="#000000"/>
+      default="#212121"  value="#212121"/>
   <Variable name="sidebar.icons.color"
       description="Sidebar icons color"
       type="color"
-      default="#707070"  value="#414141"/>
+      default="#707070"  value="#707070"/>
 </Group>
 
 <Group description="Author profile" selector='.widget.Profile'>
@@ -301,7 +302,7 @@
   <Variable name="attribution.icon.color" description="Attribution icon color"
       type="color"
       default="#707070"
-      hideEditor="true"  value="#414141"/>
+      hideEditor="true"  value="#707070"/>
 </Group>
 
 <Group description="Widths">
@@ -3647,7 +3648,7 @@ body.sidebar-visible .bg-photo-container {
                       </div>
                     </button>
                     <b:section id='search_top' name='Search (Top)' showaddelement='false'>
-                      <b:widget id='BlogSearch1' locked='true' title='搜尋此網誌' type='BlogSearch' visible='false'>
+                      <b:widget id='BlogSearch1' locked='true' title='搜尋此網誌' type='BlogSearch' visible='true'>
                         <b:includable id='main'>
   <b:include name='widget-title'/>
   <b:include name='content'/>
@@ -3763,7 +3764,7 @@ body.sidebar-visible .bg-photo-container {
                     <b:section class='clearboth' id='page_list_top' name='Page List (Top)' showaddelement='false'>
                       <b:widget cond='!data:view.isPost' id='PageList1' locked='true' title='' type='PageList' visible='true'>
                         <b:widget-settings>
-                          <b:widget-setting name='pageListJson'>{}</b:widget-setting>
+                          <b:widget-setting name='pageListJson'><![CDATA[{'4507532861413461187': {'href': 'http://blog.ccjeng.com/p/blog-page_25.html', 'title': '作品', 'position': 0}, '8359158633307406335': {'href': 'http://blog.ccjeng.com/p/blog-page.html', 'title': '關於', 'position': 1}}]]></b:widget-setting>
                           <b:widget-setting name='homeTitle'>首頁</b:widget-setting>
                         </b:widget-settings>
                         <b:includable id='main'>
@@ -3819,7 +3820,7 @@ body.sidebar-visible .bg-photo-container {
             </header>
             <div>
               <b:section ads='true' class='vertical-ad-container' id='ads' name='Ads' showaddelement='false'>
-                <b:widget id='AdSense1' locked='true' title='' type='AdSense' visible='true'>
+                <b:widget id='AdSense1' locked='true' title='' type='AdSense' visible='false'>
                   <b:widget-settings>
                     <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
                     <b:widget-setting name='style.textcolor'>#2196f3</b:widget-setting>
@@ -3984,11 +3985,11 @@ body.sidebar-visible .bg-photo-container {
                       <b:widget-setting name='authorLabel'>作者&#65306;</b:widget-setting>
                       <b:widget-setting name='showCommentLink'>false</b:widget-setting>
                       <b:widget-setting name='style.urlcolor'>#212121</b:widget-setting>
-                      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+                      <b:widget-setting name='showAuthor'>false</b:widget-setting>
                       <b:widget-setting name='style.linkcolor'>#757575</b:widget-setting>
                       <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                       <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                      <b:widget-setting name='timestampLabel'>-</b:widget-setting>
+                      <b:widget-setting name='timestampLabel'/>
                       <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                       <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                       <b:widget-setting name='showLabels'>false</b:widget-setting>
@@ -4431,7 +4432,7 @@ body.sidebar-visible .bg-photo-container {
                   </b:widget>
                   <b:widget cond='data:view.isSingleItem and data:posts any (p =&gt; p.id != data:view.postId)' id='PopularPosts1' locked='true' title='相關文章' type='PopularPosts' visible='true'>
                     <b:widget-settings>
-                      <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
+                      <b:widget-setting name='numItemsToShow'>4</b:widget-setting>
                       <b:widget-setting name='showThumbnails'>true</b:widget-setting>
                       <b:widget-setting name='showSnippets'>true</b:widget-setting>
                       <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
@@ -4558,7 +4559,7 @@ body.sidebar-visible .bg-photo-container {
         <b:class cond='data:widgets none w =&gt; w.sectionId == &quot;sidebar_top&quot;' name='no-items'/>
 
         <b:section class='sidebar_top' id='sidebar_top' name='Sidebar (Top)'>
-          <b:widget id='Profile1' locked='true' title='著作人' type='Profile' visible='false'>
+          <b:widget id='Profile1' locked='true' title='關於我自己' type='Profile' visible='false'>
             <b:widget-settings>
               <b:widget-setting name='showaboutme'>false</b:widget-setting>
               <b:widget-setting name='showlocation'>false</b:widget-setting>
@@ -4783,10 +4784,10 @@ bloggerjs.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/blogger_index
         <b:widget id='Label1' locked='false' title='標籤' type='Label' visible='true'>
           <b:widget-settings>
             <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-            <b:widget-setting name='display'>LIST</b:widget-setting>
+            <b:widget-setting name='display'>CLOUD</b:widget-setting>
             <b:widget-setting name='selectedLabelsList'/>
             <b:widget-setting name='showType'>ALL</b:widget-setting>
-            <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+            <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main' var='this'>
           <details class='collapsible extendable'>
